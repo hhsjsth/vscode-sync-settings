@@ -1,18 +1,4 @@
-disabled:
-  - id: alexdauenhauer.catppuccin-noctis
-    uuid: 00000000-0000-0000-0000-000000000000
-  - id: Catppuccin.catppuccin-vsc
-    uuid: 69264e4d-cd3b-468a-8f2b-e69673c7d864
-  - id: myriad-dreamin.tinymist
-    uuid: 00000000-0000-0000-0000-000000000000
-  - id: sainnhe.everforest
-    uuid: 00000000-0000-0000-0000-000000000000
-  - id: tamasfe.even-better-toml
-    uuid: 00000000-0000-0000-0000-000000000000
-  - id: tomoki1207.pdf
-    uuid: 00000000-0000-0000-0000-000000000000
-  - id: yzhang.markdown-all-in-one
-    uuid: 00000000-0000-0000-0000-000000000000
+disabled: []
 enabled:
   - id: chanhx.crabviz
     uuid: f4a2b496-ab61-490e-928e-4f8bd332ec2c
