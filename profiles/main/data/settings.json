@@ -1,0 +1,61 @@
+{
+	"editor.fontFamily": "RecMonoSmCasual Nerd Font Propo, FiraMono Nerd Font Propo, JetBrainsMono NFP, Maple Mono NF CN, MonaspiceNe Nerd Font Propo, Cascadia Code, CodeNewRoman Nerd Font Propo, Noto Sans Mono CJK SC, Agave Nerd Font Propo, UbuntuMono Nerd Font Propo, CommitMono Nerd Font Propo, Monaco Nerd Font Mono, Iosevka Custom, Inconsolata Nerd Font, Zed Plex Mono, ZedMono NFP, Input, Intel One Mono, WPSLingXiuHei, PingFang SC, LXGW WenKai Screen, Source Han Mono SC, M PLUS Code Latin, Comic Mono",
+	"editor.wordWrap": "on",
+	// 避免被 minimap 挡住
+	// "editor.wrappingStrategy": "advanced",
+	"editor.minimap.enabled": false,
+	"workbench.commandPalette.preserveInput": true,
+	/////////////////////////////////////////// Vim
+	"vim.vimrc.enable": true,
+	"vim.vimrc.path": "D:\\Data\\Configuration\\vim\\.vscode.vimrc",
+	// 这个选项有 bug, 会导致 vim 光标在跳到某个位置之后再按左右就会回到以前的地方再左右移动, 而不是再跳转之后的位置进行左右移动
+	"vim.useSystemClipboard": true,
+	"vim.easymotion": true,
+	"vim.sneak": true,
+	"vim.highlightedyank.enable": true,
+	"vim.leader": "<Space>",
+	"vim.handleKeys": {
+		"<C-c>": false,
+		"<C-h>": false,
+		"<C-z>": false,
+		"<C-y>": false,
+		"<C-w>": false,
+		"<C-b>": false,
+		"<C-f>": false,
+		"<C-n>": false,
+		"<C-k>": false,
+		"<C-j>": false,
+		"<C-r>": false,
+		"<C-p>": false
+	},
+	/////////////////////////////////////////// Format
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff",
+	},
+	/////////////////////////////////////////// Files
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	/////////////////////////////////////////// Python
+	"notebook.defaultFormatter": "charliermarsh.ruff",
+	/////////////////////////////////////////// Other
+	"git.confirmSync": false,
+	"extensions.ignoreRecommendations": true,
+	// 当搜索词为小写时，则不区分大小写进行搜索；否则区分大小写
+	"search.smartCase": true,
+	"remote.SSH.remotePlatform": {
+		"gtr-arch": "linux"
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.ccls-cache": true,
+		"**/.cache/clangd": true
+	},
+	"update.mode": "manual",
+	// "remote.SSH.defaultExtensions": [
+	// 	"charliermarsh.ruff",
+	// 	"ms-toolsai.jupyter",
+	// 	"ms-python.python"
+	// ],
+	"security.workspace.trust.enabled": false,
+}
