@@ -67,9 +67,9 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   'pwa-node'\"},{\"when\":\"jsDebugNetworkAvailable\"}]},{\"id\":\"workbench.vi\
   ew.remote\",\"themeIcon\":{\"id\":\"remote-explorer-view-icon\"},\"name\":\"R\
   emote
-  Explorer\",\"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.extensio\
-  ns\",\"themeIcon\":{\"id\":\"extensions-view-icon\"},\"name\":\"Extensions\",\
-  \"isBuiltin\":true,\"views\":[{\"when\":\"defaultExtensionViews &&
+  Explorer\",\"isBuiltin\":true,\"views\":[{}]},{\"id\":\"workbench.view.extens\
+  ions\",\"themeIcon\":{\"id\":\"extensions-view-icon\"},\"name\":\"Extensions\
+  \",\"isBuiltin\":true,\"views\":[{\"when\":\"defaultExtensionViews &&
   extensionsGalleryStatus == 'accessDenied' || defaultExtensionViews &&
   extensionsGalleryStatus == 'requiresSignIn' || searchMarketplaceExtensions &&
   extensionsGalleryStatus == 'accessDenied' || searchMarketplaceExtensions &&
@@ -84,19 +84,18 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   !config.extensions.showRecommendationsOnlyOnDemand &&
   !sortByUpdateDate\"},{\"when\":\"defaultExtensionViews &&
   hasInstalledExtensions\"},{\"when\":\"defaultExtensionViews &&
-  hasInstalledMcpServers\"},{\"when\":\"config.chat.mcp.gallery.enabled &&
-  defaultExtensionViews && !chatSetupHidden && !config.chat.disableAIFeatures &&
-  !hasInstalledMcpServers && mcpServersGalleryStatus == 'available' ||
-  config.chat.mcp.gallery.serviceUrl && defaultExtensionViews &&
-  !chatSetupHidden && !config.chat.disableAIFeatures && !hasInstalledMcpServers
-  && mcpServersGalleryStatus == 'available' || defaultExtensionViews &&
-  !chatSetupHidden && !config.chat.disableAIFeatures && !hasInstalledMcpServers
-  && mcpServersGalleryStatus == 'available' && productQualityType !=
+  hasInstalledMcpServers &&
+  !chatSetupHidden\"},{\"when\":\"config.chat.mcp.gallery.enabled &&
+  defaultExtensionViews && !chatSetupHidden && !hasInstalledMcpServers &&
+  mcpServersGalleryStatus == 'available' || config.chat.mcp.gallery.serviceUrl
+  && defaultExtensionViews && !chatSetupHidden && !hasInstalledMcpServers &&
+  mcpServersGalleryStatus == 'available' || defaultExtensionViews &&
+  !chatSetupHidden && !hasInstalledMcpServers && mcpServersGalleryStatus ==
+  'available' && productQualityType !=
   'stable'\"},{\"when\":\"defaultExtensionViews && !chatSetupHidden &&
-  !config.chat.disableAIFeatures && !config.chat.mcp.gallery.enabled &&
-  !config.chat.mcp.gallery.serviceUrl && !hasInstalledMcpServers &&
-  mcpServersGalleryStatus == 'available' && productQualityType ==
-  'stable'\"},{\"when\":\"defaultExtensionViews &&
+  !config.chat.mcp.gallery.enabled && !config.chat.mcp.gallery.serviceUrl &&
+  !hasInstalledMcpServers && mcpServersGalleryStatus == 'available' &&
+  productQualityType == 'stable'\"},{\"when\":\"defaultExtensionViews &&
   hasInstalledExtensions\"},{\"when\":\"hasGallery &&
   searchMarketplaceExtensions\"},{\"when\":\"installedExtensions ||
   searchInstalledExtensions\"},{\"when\":\"searchEnabledExtensions\"},{\"when\":\
@@ -107,21 +106,22 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   aceExtensions\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
   virtualWorkspace\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
   virtualWorkspace\"},{\"when\":\"searchDeprecatedExtensions\"},{\"when\":\"con\
-  fig.chat.mcp.gallery.enabled && searchMcpServers && mcpServersGalleryStatus ==
-  'available' || config.chat.mcp.gallery.serviceUrl && searchMcpServers &&
-  mcpServersGalleryStatus == 'available' || searchMcpServers &&
-  mcpServersGalleryStatus == 'available' && productQualityType !=
-  'stable'\"},{\"when\":\"searchMcpServers && !config.chat.mcp.gallery.enabled
-  && !config.chat.mcp.gallery.serviceUrl && mcpServersGalleryStatus ==
-  'available' && productQualityType ==
+  fig.chat.mcp.gallery.enabled && searchMcpServers && !chatSetupHidden &&
+  mcpServersGalleryStatus == 'available' || config.chat.mcp.gallery.serviceUrl
+  && searchMcpServers && !chatSetupHidden && mcpServersGalleryStatus ==
+  'available' || searchMcpServers && !chatSetupHidden && mcpServersGalleryStatus
+  == 'available' && productQualityType !=
+  'stable'\"},{\"when\":\"searchMcpServers && !chatSetupHidden &&
+  !config.chat.mcp.gallery.enabled && !config.chat.mcp.gallery.serviceUrl &&
+  mcpServersGalleryStatus == 'available' && productQualityType ==
   'stable'\"}]},{\"id\":\"workbench.view.chat.sessions\",\"themeIcon\":{\"id\":\
   \"chat-sessions-icon\",\"description\":\"Icon for Agent Sessions
   View\",\"defaults\":{\"id\":\"comment-discussion-sparkle\"}},\"name\":\"Agent
   Sessions\",\"isBuiltin\":true,\"views\":[{\"when\":\"!chatSetupDisabled &&
   !chatSetupHidden && config.chat.agentSessionsViewLocation ==
-  'view'\"}]},{\"id\":\"workbench.view.extension.test\",\"themeIcon\":{\"id\":\
-  \"test-view-icon\"},\"name\":\"Testing\",\"isBuiltin\":true,\"views\":[{\"when\
-  \":\"testing.providerCount >
+  'view'\"},{\"when\":\"false\"}]},{\"id\":\"workbench.view.extension.test\",\"\
+  themeIcon\":{\"id\":\"test-view-icon\"},\"name\":\"Testing\",\"isBuiltin\":tr\
+  ue,\"views\":[{\"when\":\"testing.providerCount >
   0\"},{\"when\":\"testing.isTestCoverageOpen\"}]},{\"id\":\"workbench.view.ext\
   ension.references-view\",\"themeIcon\":{\"id\":\"references\"},\"name\":\"Ref\
   erences\",\"isBuiltin\":false,\"views\":[{\"when\":\"reference-list.isActive\
@@ -180,24 +180,33 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   s.enabled && gitlens:views:patchDetails:mode &&
   !gitlens:untrusted\"}]},{\"id\":\"workbench.view.extension.marimo-explorer\",\
   \"isBuiltin\":false},{\"id\":\"workbench.panel.chatSidebar\",\"isBuiltin\":fa\
-  lse},{\"id\":\"workbench.view.sync\",\"name\":\"Settings
-  Sync\",\"isBuiltin\":false},{\"id\":\"workbench.view.editSessions\",\"name\":\
-  \"Cloud
-  Changes\",\"isBuiltin\":false},{\"id\":\"userDataProfiles\",\"isBuiltin\":fal\
-  se}]"
+  lse},{\"id\":\"workbench.view.sync\",\"themeIcon\":{\"id\":\"settings-sync-vi\
+  ew-icon\"},\"name\":\"Settings
+  Sync\",\"isBuiltin\":true,\"views\":[{\"when\":\"enableSyncConflictsView &&
+  hasConflicts\"},{\"when\":\"enableSyncActivityViews &&
+  userDataSyncAccountStatus == 'available' && syncStatus !=
+  'uninitialized'\"},{\"when\":\"enableSyncActivityViews &&
+  userDataSyncAccountStatus == 'available' && syncStatus !=
+  'uninitialized'\"},{\"when\":\"enableSyncActivityViews &&
+  userDataSyncAccountStatus == 'available' && syncStatus !=
+  'uninitialized'\"},{\"when\":\"enableSyncActivityViews\"},{\"when\":\"enableS\
+  yncActivityViews\"}]},{\"id\":\"workbench.view.editSessions\",\"themeIcon\":{\
+  \"id\":\"edit-sessions-view-icon\"},\"name\":\"Cloud
+  Changes\",\"isBuiltin\":true,\"views\":[{\"when\":\"editSessionsShowView\"}]}\
+  ,{\"id\":\"userDataProfiles\",\"isBuiltin\":false}]"
 workbench.activityBar.location: default
-workbench.auxiliaryBar.empty: "true"
+workbench.auxiliaryBar.empty: "false"
 workbench.auxiliaryBar.lastNonMaximizedSize: "300"
 workbench.auxiliarybar.pinnedPanels: '[{"id":"terminal","pinned":true,"visible":false,"order":3},{"id":"workbench.panel.chat","pinned":true,"visible":false,"order":1},{"id":"workbench.viewContainer.agentSessions","pinned":true,"visible":false,"order":6},{"id":"workbench.panel.chatEditing","pinned":true,"visible":false,"order":101}]'
-workbench.auxiliarybar.placeholderPanels: "[{\"id\":\"terminal\",\"name\":\"Ter\
-  minal\",\"isBuiltin\":false},{\"id\":\"workbench.panel.chat\",\"themeIcon\":{\
-  \"id\":\"chat-sparkle\"},\"name\":\"Chat\",\"isBuiltin\":true,\"views\":[{\"w\
-  hen\":\"chatPanelParticipantRegistered && !chatExtensionInvalid &&
-  !chatSetupDisabled && !chatSetupHidden &&
-  !config.chat.disableAIFeatures\"}]},{\"id\":\"workbench.viewContainer.agentSe\
-  ssions\",\"themeIcon\":{\"id\":\"chat-sessions-icon\"},\"name\":\"Agent
-  Sessions\",\"isBuiltin\":true,\"views\":[{\"when\":\"!chatSetupDisabled &&
-  !chatSetupHidden && config.chat.agentSessionsViewLocation ==
+workbench.auxiliarybar.placeholderPanels: "[{\"id\":\"terminal\",\"themeIcon\":{\
+  \"id\":\"terminal-view-icon\"},\"name\":\"Terminal\",\"isBuiltin\":true,\"vie\
+  ws\":[]},{\"id\":\"workbench.panel.chat\",\"themeIcon\":{\"id\":\"chat-sparkle\
+  \"},\"name\":\"Chat\",\"isBuiltin\":true,\"views\":[{\"when\":\"chatExtension\
+  Invalid || chatPanelParticipantRegistered || !chatSetupDisabled &&
+  !chatSetupHidden\"}]},{\"id\":\"workbench.viewContainer.agentSessions\",\"the\
+  meIcon\":{\"id\":\"chat-sessions-icon\"},\"name\":\"Agents\",\"isBuiltin\":tr\
+  ue,\"views\":[{\"when\":\"!chatSetupDisabled && !chatSetupHidden &&
+  config.chat.agentSessionsViewLocation ==
   'single-view'\"}]},{\"id\":\"workbench.panel.chatEditing\",\"isBuiltin\":fals\
   e}]"
 workbench.auxiliaryBar.size: "300"
@@ -211,13 +220,13 @@ workbench.panel.lastNonMaximizedHeight: "300"
 workbench.panel.lastNonMaximizedWidth: "300"
 workbench.panel.markers.hidden: '[{"id":"workbench.panel.markers.view","isHidden":false}]'
 workbench.panel.output.hidden: '[{"id":"workbench.panel.output","isHidden":false}]'
-workbench.panel.pinnedPanels: '[{"id":"workbench.panel.markers","pinned":true,"visible":false,"order":0},{"id":"workbench.panel.output","pinned":true,"visible":false,"order":1},{"id":"workbench.panel.repl","pinned":true,"visible":false,"order":2},{"id":"terminal","pinned":true,"visible":false,"order":3},{"id":"workbench.panel.testResults","pinned":true,"visible":false,"order":3},{"id":"~remote.forwardedPortsContainer","pinned":true,"visible":false,"order":5},{"id":"workbench.view.extension.gitlensPanel","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.jupyter-variables","pinned":true,"visible":false,"order":7},{"id":"refactorPreview","pinned":true,"visible":false}]'
+workbench.panel.pinnedPanels: '[{"id":"workbench.panel.markers","pinned":true,"visible":false,"order":0},{"id":"workbench.panel.output","pinned":true,"visible":false,"order":1},{"id":"workbench.panel.repl","pinned":true,"visible":false,"order":2},{"id":"terminal","pinned":true,"visible":false,"order":3},{"id":"workbench.panel.testResults","pinned":true,"visible":false,"order":3},{"id":"~remote.forwardedPortsContainer","pinned":true,"visible":false,"order":5},{"id":"workbench.view.extension.gitlensPanel","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.jupyter-variables","pinned":true,"visible":false,"order":7},{"id":"refactorPreview","pinned":true,"visible":false},{"id":"workbench.views.service.panel.2e6c91c1-a666-410a-8b9c-bdd1cb467738","pinned":true,"visible":false}]'
 workbench.panel.placeholderPanels: '[{"id":"workbench.panel.markers","themeIcon":{"id":"markers-view-icon"},"name":"Problems","isBuiltin":true,"views":[{}]},{"id":"workbench.panel.output","themeIcon":{"id":"output-view-icon"},"name":"Output","isBuiltin":true,"views":[{}]},{"id":"workbench.panel.repl","themeIcon":{"id":"debug-console-view-icon"},"name":"Debug
-  Console","isBuiltin":true,"views":[{"when":"debuggersAvailable"}]},{"id":"terminal","themeIcon":{"id":"terminal-view-icon"},"name":"Terminal","isBuiltin":true,"views":[{}]},{"id":"workbench.panel.testResults","themeIcon":{"id":"test-results-icon"},"name":"Test
+  Console","isBuiltin":true,"views":[{"when":"debuggersAvailable"}]},{"id":"terminal","name":"Terminal","isBuiltin":false},{"id":"workbench.panel.testResults","themeIcon":{"id":"test-results-icon"},"name":"Test
   Results","isBuiltin":true,"views":[{"when":"testing.hasAnyResults"}]},{"id":"~remote.forwardedPortsContainer","themeIcon":{"id":"ports-view-icon"},"name":"Ports","isBuiltin":true,"views":[{}]},{"id":"workbench.view.extension.gitlensPanel","themeIcon":{"id":"gitlens-graph"},"name":"GitLens","isBuiltin":false,"views":[{"when":"!gitlens:disabled
   && !gitlens:plus:disabled"},{"when":"!gitlens:disabled &&
   !gitlens:plus:disabled"}]},{"id":"workbench.view.extension.jupyter-variables","name":"Jupyter","isBuiltin":false},{"id":"refactorPreview","themeIcon":{"id":"refactor-preview-view-icon"},"name":"Refactor
-  Preview","isBuiltin":true,"views":[{"when":"refactorPreview.enabled"}]}]'
+  Preview","isBuiltin":true,"views":[{"when":"refactorPreview.enabled"}]},{"id":"workbench.views.service.panel.2e6c91c1-a666-410a-8b9c-bdd1cb467738","themeIcon":{"id":"terminal-view-icon"},"name":"Terminal","isBuiltin":true,"views":[{}]}]'
 workbench.panel.repl.hidden: '[{"id":"workbench.panel.repl.view","isHidden":false,"order":1},{"id":"terminal","isHidden":false,"order":0}]'
 workbench.panel.size: "266"
 workbench.scm.views.state.hidden: '[{"id":"workbench.scm","isHidden":false},{"id":"workbench.scm.repositories","isHidden":false},{"id":"gitlens.views.commitDetails","isHidden":false},{"id":"gitlens.views.contributors","isHidden":false},{"id":"gitlens.views.branches","isHidden":false},{"id":"gitlens.views.commits","isHidden":false},{"id":"gitlens.views.remotes","isHidden":false},{"id":"gitlens.views.repositories","isHidden":true},{"id":"gitlens.views.stashes","isHidden":false},{"id":"gitlens.views.tags","isHidden":false},{"id":"gitlens.views.worktrees","isHidden":false},{"id":"git-log--graph","isHidden":false},{"id":"workbench.scm.sync","isHidden":false},{"id":"workbench.scm.history","isHidden":false},{"id":"gitlens.views.scm.grouped","isHidden":false}]'
@@ -275,7 +284,7 @@ workbench.view.extensions.state.hidden: '[{"id":"workbench.views.extensions.inst
 workbench.view.remote.state.hidden: '[{"id":"targetsWsl","isHidden":false},{"id":"remoteTargets","isHidden":false},{"id":"~remote.helpPanel","isHidden":false},{"id":"targetsContainers","isHidden":false},{"id":"detailsContainers","isHidden":false},{"id":"devVolumes","isHidden":false}]'
 workbench.view.search.state.hidden: '[{"id":"workbench.view.search","isHidden":false}]'
 workbench.view.sync.state.hidden: '[{"id":"workbench.views.sync.conflicts","isHidden":false},{"id":"workbench.views.sync.remoteActivity","isHidden":false},{"id":"workbench.views.sync.machines","isHidden":false},{"id":"workbench.views.sync.localActivity","isHidden":true},{"id":"workbench.views.sync.troubleshoot","isHidden":true},{"id":"workbench.views.sync.externalActivity","isHidden":false}]'
-workbench.views.extensions.installed.size: "5"
+workbench.views.extensions.installed.size: "8"
 workbench.views.extensions.local.installed.size: "17"
 workbench.views.extensions.remote.installed.size: "12"
 workbench.views.service.panel.2e6c91c1-a666-410a-8b9c-bdd1cb467738.state.hidden: '[{"id":"terminal","isHidden":false}]'
