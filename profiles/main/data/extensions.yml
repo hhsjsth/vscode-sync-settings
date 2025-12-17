@@ -1,19 +1,7 @@
 disabled: []
 enabled:
-  - id: chanhx.crabviz
-    uuid: f4a2b496-ab61-490e-928e-4f8bd332ec2c
   - id: eamodio.gitlens
     uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
-  - id: ms-toolsai.jupyter
-    uuid: 6c2f1801-1e7f-45b2-9b5c-7782f1e076e8
-  - id: ms-toolsai.jupyter-keymap
-    uuid: 9f6dc8db-620c-4844-b8c5-e74914f1be27
-  - id: ms-toolsai.jupyter-renderers
-    uuid: b15c72f8-d5fe-421a-a4f7-27ed9f6addbf
-  - id: ms-toolsai.vscode-jupyter-cell-tags
-    uuid: ab4fb32a-befb-4102-adf9-1652d0cd6a5e
-  - id: ms-toolsai.vscode-jupyter-slideshow
-    uuid: e153ca70-b543-4865-b4c5-b31d34185948
   - id: sleistner.vscode-fileutils
     uuid: d637104e-1fd7-4063-98fc-8afe46012c9b
   - id: vscodevim.vim
