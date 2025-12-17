@@ -1,631 +1,7 @@
-eamodio.gitlens: '{"gitlens:synced:version":"17.7.1","gitlens:premium:subscription":{"v":1,"data":{"plan":{"actual":{"id":"community","name":"GitLens
+eamodio.gitlens: '{"gitlens:synced:version":"17.8.0","gitlens:premium:subscription":{"v":1,"data":{"plan":{"actual":{"id":"community","name":"GitLens
   Community","bundle":false,"cancelled":false,"trialReactivationCount":0,"startedOn":"2025-11-23T01:45:55.381Z"},"effective":{"id":"community","name":"GitLens
-  Community","bundle":false,"cancelled":false,"trialReactivationCount":0,"startedOn":"2025-11-23T01:45:55.381Z"}},"state":0}},"gitlens:gk:cli:install":{"status":"completed","attempts":1,"version":"3.1.48"},"gitlens:version":"17.7.1","gitlens:launchpad:indicator:hasLoaded":true,"gitlens:gk:cli:path":"d:\\scoop\\apps\\vscode\\1.106.2\\data\\user-data\\User\\globalStorage\\eamodio.gitlens","gitlens:gk:cli:corePath":"C:\\Users\\gtr\\AppData\\Local\\GitKrakenCLI","gitlens:repoVisibility":[["d:/Obsidian",{"visibility":"private","timestamp":1763862497519,"remotesHash":"github.com/hhsjsth/Obsidian"}]],"gitlens:usages":{"command:gitlens.views.scm.grouped.welcome.dismiss:executed":{"count":1,"firstUsedAt":1763868500121,"lastUsedAt":1763868500121},"commitsView:shown":{"count":1,"firstUsedAt":1763868500414,"lastUsedAt":1763868500414},"command:gitlens.gitCommands.reset:executed":{"count":1,"firstUsedAt":1764233441354,"lastUsedAt":1764233441354},"command:gitlens.diffWithRevision:executed":{"count":1,"firstUsedAt":1764945591950,"lastUsedAt":1764945591950}},"gitlens:views:scm:grouped:welcome:dismissed":true}'
-ms-vscode-remote.remote-ssh: "{\"remote.ssh.hints\":[{\"hints\":[{\"type\":\"en\
-  vironment\",\"message\":\"Extension setting 'useLocalServer' is set to value
-  'false'\",\"details\":\"Enables a mode for connecting using a single
-  connection shared between windows and across window reloads. This makes it
-  faster to open new windows and reduces the number of times a password needs to
-  be entered.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'useExecServer' is set to value 'true'\",\"details\":\"Uses the a new
-  bootstrapping mode when connecting to a server. Can be toggled off in the
-  event of connection
-  issues.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'bindHost' is set to value '{}'\",\"details\":\"Configures the host the VS
-  Code server will bind to on the remote server. It defaults to IPv4 localhost
-  and should only need modification in advanced
-  cases.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'showLoginTerminal' is set to value 'false'\",\"details\":\"Always reveal the
-  SSH login terminal.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'remotePlatform' is set to value
-  '{\\\"gtr-arch\\\":\\\"linux\\\"}'\",\"details\":\"A map of the remote
-  hostname to the platform for that remote. The hostname may include a star '*'
-  to wildcard match. Valid values: `linux`, `macOS`, `windows`. Note - this
-  setting will soon be required when `#remote.SSH.useLocalServer#` is disabled,
-  so it is currently being autopopulated for successful connections, but is not
-  currently used.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'path' is set to value ''\",\"details\":\"An absolute path to the SSH
-  executable. When empty, it will use \\\"ssh\\\" on the path or in common
-  install locations.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'configFile' is set to value ''\",\"details\":\"The absolute file path
-  to a custom SSH config
-  file.\"},{\"type\":\"environment\",\"message\":\"Extension setting 'useFlock'
-  is set to value 'true'\",\"details\":\"Whether to use `flock` for creating
-  lockfiles on Linux remotes instead of `ln`. By default, we use `flock` on
-  Linux remotes and `ln` on
-  macOS.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'lockfilesInTmp' is set to value 'false'\",\"details\":\"Whether to keep
-  lockfiles in `/tmp` instead of in the server's install folder. Useful for
-  connecting to hosts which have issues with locking, such as hosts with a home
-  directory using NFS or another distributed
-  filesystem.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'localServerDownload' is set to value 'auto'\",\"details\":\"Whether the
-  extension can download the VS Code Server on the client and transfer it to the
-  host with scp, instead of downloading it on the
-  host.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'remoteServerListenOnSocket' is set to value 'false'\",\"details\":\"When
-  true, the remote VS Code server will listen on a socket path instead of
-  opening a port. Only valid for Linux and macOS remotes. After toggling this
-  setting, run the command \\\"Kill VS Code Server on Host...\\\" for it to take
-  effect. Requires OpenSSH 6.7+. Disables the \\\"local server\\\" connection
-  multiplexing mode. Requires `AllowStreamLocalForwarding` to be enabled for the
-  SSH server.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'defaultExtensions' is set to value '[]'\",\"details\":\"List of extensions
-  that should be installed automatically on all SSH
-  hosts.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'defaultExtensionsIfInstalledLocally' is set to value
-  '[]'\"},{\"type\":\"environment\",\"message\":\"Extension setting 'loglevel'
-  is set to value '2'\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'enableDynamicForwarding' is set to value
-  'true'\",\"details\":\"Whether to use SSH dynamic forwarding to allow setting
-  up new port tunnels over an existing SSH connection. When this is used, a
-  password only needs to be entered once for each remote
-  window.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'enableRemoteCommand' is set to value
-  'false'\",\"details\":\"**Experimental:** Enable using RemoteCommands from ssh
-  config entries. This is only enabled if `#remote.SSH.useLocalServer#` is
-  enabled as well and the remote you are trying to connect to is not listed
-  under the `#remote.SSH.remotePlatform#`
-  setting.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'serverPickPortsFromRange' is set to value '{}'\",\"details\":\"A map of the
-  remote hostname to a range of ports you'd prefer the server to connect to on
-  launch on the **remote** machine. If no free port is found in range, an error
-  will be thrown. Valid ranges of the form `number-number` such as `4000-5000`;
-  it's expected the first number will be lower than the
-  next.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'serverInstallPath' is set to value '{}'\",\"details\":\"A map of remote host
-  to absolute path where the VS Code server will be installed. By default the
-  server is installed in the home directory of every remote. **Note**: By
-  changing this setting you may need to clean up other installations of
-  `.vscode-server` on your remote that isn't in the path you've
-  configured.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'permitPtyAllocation' is set to value 'false'\",\"details\":\"Permits the
-  system to allocate a pseudo-terminal for the SSH connection (by omitting the
-  '-T' SSH connection flag). This setting is disabled by default and may be
-  enabled to support specific
-  use-cases.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'preferredLocalPortRange' is set to value 'undefined'\",\"details\":\"A range
-  of **local** ports preferred to utilize for the SSH tunnel connection. If no
-  free port is found in range, an error will be thrown. Valid ranges of the form
-  `number-number` such as `4000-5000`; it's expected the first number will be
-  lower than the next.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'useCurlAndWgetConfigurationFiles' is set to value
-  'false'\",\"details\":\"Respect configuration from remote environment's
-  'curlrc' and 'wgetrc' files (placed in their respective default
-  locations).  Enabling this setting may be useful in certain cases (i.e: proxy
-  configuration) but can interfere with this extension's operation. Setting may
-  be ignored on platforms that do not support the necessary flags (i.e:
-  busybox).\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'experimental.chat' is set to value 'true'\",\"details\":\"Enables an
-  experimental Copilot Chat Participant.  Use natural language to learn about
-  Remote - SSH and diagnose connection issues.  For the best experience, use VS
-  Code Insiders and ensure you have the latest Copilot Chat extension
-  installed.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'experimental.enhancedSessionLogs' is set to value
-  'true'\",\"details\":\"Generates a summarized table of issues detected from
-  the previous session.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'httpProxy' is set to value '{\\\"*\\\":\\\"\\\"}'\",\"details\":\"Set
-  the 'http_proxy' environment variable.  This will be set for install and
-  launch of the remote VS Code Server. Provide a string to set for all hosts, or
-  an object with per-host configuration. Kill existing server on the remote for
-  this setting to take
-  effect.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'httpsProxy' is set to value '{\\\"*\\\":\\\"\\\"}'\",\"details\":\"Set the
-  'https_proxy' environment variable.  This will be set for install and launch
-  of the remote VS Code Server. Provide a string to set for all hosts, or an
-  object with per-host configuration. Kill existing server on the remote for
-  this setting to take effect.\"},{\"type\":\"environment\",\"message\":\"VS
-  Code version: 1.106.2\"},{\"type\":\"environment\",\"message\":\"Remote-SSH
-  version: remote-ssh@0.120.0\"},{\"type\":\"environment\",\"message\":\"win32
-  x64\"},{\"type\":\"log\",\"message\":\"[08:22:49.290] Log Level:
-  2\\n[08:22:49.293] Registering chat participant remote-ssh\\n[08:22:49.307]
-  SSH Resolver called for \\\"ssh-remote+gtr-arch\\\", attempt
-  1\\n[08:22:49.311] remote.SSH.useLocalServer = false\\n[08:22:49.312]
-  remote.SSH.useExecServer = true\\n[08:22:49.312] remote.SSH.bindHost =
-  {}\\n[08:22:49.312] remote.SSH.showLoginTerminal = false\\n[08:22:49.312]
-  remote.SSH.remotePlatform = {\\\"gtr-arch\\\":\\\"linux\\\"}\\n[08:22:49.312]
-  remote.SSH.path = \\n[08:22:49.312] remote.SSH.configFile = \\n[08:22:49.312]
-  remote.SSH.useFlock = true\\n[08:22:49.312] remote.SSH.lockfilesInTmp =
-  false\\n[08:22:49.313] remote.SSH.localServerDownload = auto\\n[08:22:49.313]
-  remote.SSH.remoteServerListenOnSocket = false\\n[08:22:49.313]
-  remote.SSH.defaultExtensions = []\\n[08:22:49.313]
-  remote.SSH.defaultExtensionsIfInstalledLocally = []\\n[08:22:49.313]
-  remote.SSH.loglevel = 2\\n[08:22:49.313] remote.SSH.enableDynamicForwarding =
-  true\\n[08:22:49.313] remote.SSH.enableRemoteCommand = false\\n[08:22:49.313]
-  remote.SSH.serverPickPortsFromRange = {}\\n[08:22:49.313]
-  remote.SSH.serverInstallPath = {}\\n[08:22:49.314]
-  remote.SSH.permitPtyAllocation = false\\n[08:22:49.314]
-  remote.SSH.preferredLocalPortRange = undefined\\n[08:22:49.314]
-  remote.SSH.useCurlAndWgetConfigurationFiles = false\\n[08:22:49.314]
-  remote.SSH.experimental.chat = true\\n[08:22:49.314]
-  remote.SSH.experimental.enhancedSessionLogs = true\\n[08:22:49.314]
-  remote.SSH.httpProxy = {\\\"*\\\":\\\"\\\"}\\n[08:22:49.314]
-  remote.SSH.httpsProxy = {\\\"*\\\":\\\"\\\"}\\n[08:22:49.321] VS Code version:
-  1.106.2\\n[08:22:49.321] Remote-SSH version:
-  remote-ssh@0.120.0\\n[08:22:49.321] win32 x64\\n[08:22:49.324] Found relevant
-  configuration for host gtr-arch in JSON data\\n[08:22:49.324] SSH Resolver
-  called for host: gtr-arch\\n[08:22:49.324] Setting up SSH remote
-  \\\"gtr-arch\\\"\\n[08:22:49.332] Using commit id
-  \\\"1e3c50d64110be466c0b4a45222e81d2c9352888\\\" and quality \\\"stable\\\"
-  for server\\n[08:22:49.332] Extensions to install: \\n[08:22:49.338] Install
-  and start server if needed\\n[08:22:49.341] Checking ssh with
-  \\\"C:\\\\Windows\\\\system32\\\\ssh.exe -V\\\"\\n[08:22:49.343] Got error
-  from ssh: spawn C:\\\\Windows\\\\system32\\\\ssh.exe ENOENT\\n[08:22:49.344]
-  Checking ssh with \\\"C:\\\\Windows\\\\ssh.exe -V\\\"\\n[08:22:49.344] Got
-  error from ssh: spawn C:\\\\Windows\\\\ssh.exe ENOENT\\n[08:22:49.344]
-  Checking ssh with \\\"C:\\\\Windows\\\\System32\\\\Wbem\\\\ssh.exe
-  -V\\\"\\n[08:22:49.345] Got error from ssh: spawn
-  C:\\\\Windows\\\\System32\\\\Wbem\\\\ssh.exe ENOENT\\n[08:22:49.345] Checking
-  ssh with \\\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\ssh.exe
-  -V\\\"\\n[08:22:49.346] Got error from ssh: spawn
-  C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\ssh.exe
-  ENOENT\\n[08:22:49.346] Checking ssh with
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe -V\\\"\\n[08:22:49.381] >
-  OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2\\n\\n[08:22:49.384] Running script
-  with connection command:
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 58971
-  \\\"gtr-arch\\\" sh\\n[08:22:49.386] Generated SSH command: 'type
-  \\\"C:\\\\Users\\\\gtr\\\\AppData\\\\Local\\\\Temp\\\\vscode-linux-multi-line\
-  -command-gtr-arch-525298424.sh\\\" |
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 58971
-  \\\"gtr-arch\\\" sh'\\n[08:22:49.387] Detected connect timeout of 0. Setting
-  maximum timeout.\\n[08:22:49.388] Terminal shell path:
-  C:\\\\Windows\\\\System32\\\\cmd.exe\\n[08:22:49.611] > \\n[08:22:49.611] Got
-  some output, clearing connection timeout\\n[08:22:49.626] > \\n[08:22:49.993]
-  > e124395e5511: running\\n> Script executing under PID:
-  142366\\n[08:22:50.039] > Found existing installation at
-  /home/gtr/.vscode-server...\\n> Starting VS Code CLI...\\n> Removing old
-  logfile at /home/gtr/.vscode-server/.cli.1e3c50d64110be466c0b4a4522\\n>
-  2e81d2c9352888.log\\n[08:22:50.054] > Spawned remote CLI: 142385\\n> Waiting
-  for server log... \\n[08:22:50.084] > Waiting for server
-  log...\\n[08:22:50.115] > Waiting for server log...\\n[08:22:50.161] >
-  e124395e5511: start\\n> listeningOn==127.0.0.1:39073==\\n>
-  osReleaseId==arch==\\n> arch==x86_64==\\n> vscodeArch==x64==\\n>
-  bitness==64==\\n> tmpDir==/run/user/1000==\\n> platform==linux==\\n>
-  unpackResult====\\n> didLocalDownload==0==\\n> downloadTime====\\n>
-  installTime====\\n> serverStartTime==124==\\n>
-  execServerToken==a111a111-a111-111a-111a-1a111111a11a==\\n>
-  platformDownloadPath==cli-alpine-x64==\\n> SSH_AUTH_SOCK====\\n>
-  DISPLAY====\\n> e124395e5511: end\\n[08:22:50.162] Received install output:
-  \\nlisteningOn==127.0.0.1:39073==\\nosReleaseId==arch==\\narch==x86_64==\\nvs\
-  codeArch==x64==\\nbitness==64==\\ntmpDir==/run/user/1000==\\nplatform==linux==\
-  \\nunpackResult====\\ndidLocalDownload==0==\\ndownloadTime====\\ninstallTime=\
-  ===\\nserverStartTime==124==\\nexecServerToken==a111a111-a111-111a-111a-1a111\
-  111a11a==\\nplatformDownloadPath==cli-alpine-x64==\\nSSH_AUTH_SOCK====\\nDISP\
-  LAY====\\n\\n[08:22:50.162] Remote server is listening on port
-  39073\\n[08:22:50.162] Parsed server configuration:
-  {\\\"serverConfiguration\\\":{\\\"remoteListeningOn\\\":{\\\"port\\\":39073},\
-  \\\"osReleaseId\\\":\\\"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"sshAuthSock\\\
-  \":\\\"\\\",\\\"display\\\":\\\"\\\",\\\"tmpDir\\\":\\\"/run/user/1000\\\",\\\
-  \"platform\\\":\\\"linux\\\",\\\"execServerToken\\\":\\\"a111a111-a111-111a-1\
-  11a-1a111111a11a\\\"},\\\"serverStartTime\\\":124,\\\"installUnpackCode\\\":\\\
-  \"\\\"}\\n[08:22:50.166] Starting forwarding server. local port 58974 ->
-  socksPort 58971 -> remotePort 39073\\n[08:22:50.166] Forwarding server
-  listening on port 58974\\n[08:22:50.166] Waiting for ssh tunnel to be
-  ready\\n[08:22:50.168] [Forwarding server port 58974] Got connection
-  0\\n[08:22:50.169] Tunneled port 39073 to local port 58974\\n[08:22:50.169]
-  Resolved \\\"ssh-remote+gtr-arch\\\" to \\\"port 58974\\\"\\n[08:22:50.176]
-  Initizing new exec server for ssh-remote+gtr-arch\\n[08:22:50.176] Resolving
-  exec server at port 58974\\n[08:22:50.183] [Forwarding server port 58974] Got
-  connection 1\\n[08:22:50.184] > \\n[08:22:50.288] Exec server for
-  ssh-remote+gtr-arch created and cached\\n[08:22:50.289] Extensions to install:
-  \\n[08:22:50.289] Updating terminal environments: {}\\n[08:22:50.292]
-  TELEMETRY:
-  {\\\"eventName\\\":\\\"resolver\\\",\\\"properties\\\":{\\\"osReleaseId\\\":\\\
-  \"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"askedPw\\\":\\\"0\\\",\\\"askedPas\
-  sphrase\\\":\\\"0\\\",\\\"asked2fa\\\":\\\"0\\\",\\\"askedHostKey\\\":\\\"0\\\
-  \",\\\"remoteInConfigFile\\\":\\\"1\\\",\\\"gotUnrecognizedPrompt\\\":\\\"0\\\
-  \",\\\"dynamicForwarding\\\":\\\"1\\\",\\\"localServer\\\":\\\"0\\\",\\\"didL\
-  ocalDownload\\\":\\\"0\\\",\\\"installUnpackCode\\\":\\\"0\\\",\\\"outcome\\\
-  \":\\\"success\\\"},\\\"measures\\\":{\\\"resolveAttempts\\\":1,\\\"retries\\\
-  \":1,\\\"isExecServer\\\":1,\\\"timing.totalResolveTime\\\":984,\\\"timing.pr\
-  eSshTime\\\":80,\\\"timing.establishSshTime\\\":606,\\\"timing.scriptTime\\\"\
-  :775,\\\"timing.serverStartTime\\\":124}}\\n[08:22:50.295]
-  ------\\n\\n\\n\\n\"}],\"createdAt\":\"2025-12-05T00:22:49.292Z\"},{\"hints\"\
-  :[{\"type\":\"environment\",\"message\":\"VS Code version:
-  1.106.2\"},{\"type\":\"environment\",\"message\":\"Remote-SSH version:
-  remote-ssh@0.120.0\"},{\"type\":\"environment\",\"message\":\"win32
-  x64\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'useLocalServer' is set to value 'false'\",\"details\":\"Enables a mode for
-  connecting using a single connection shared between windows and across window
-  reloads. This makes it faster to open new windows and reduces the number of
-  times a password needs to be
-  entered.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'useExecServer' is set to value 'true'\",\"details\":\"Uses the a new
-  bootstrapping mode when connecting to a server. Can be toggled off in the
-  event of connection
-  issues.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'bindHost' is set to value '{}'\",\"details\":\"Configures the host the VS
-  Code server will bind to on the remote server. It defaults to IPv4 localhost
-  and should only need modification in advanced
-  cases.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'showLoginTerminal' is set to value 'false'\",\"details\":\"Always reveal the
-  SSH login terminal.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'remotePlatform' is set to value
-  '{\\\"gtr-arch\\\":\\\"linux\\\"}'\",\"details\":\"A map of the remote
-  hostname to the platform for that remote. The hostname may include a star '*'
-  to wildcard match. Valid values: `linux`, `macOS`, `windows`. Note - this
-  setting will soon be required when `#remote.SSH.useLocalServer#` is disabled,
-  so it is currently being autopopulated for successful connections, but is not
-  currently used.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'path' is set to value ''\",\"details\":\"An absolute path to the SSH
-  executable. When empty, it will use \\\"ssh\\\" on the path or in common
-  install locations.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'configFile' is set to value ''\",\"details\":\"The absolute file path
-  to a custom SSH config
-  file.\"},{\"type\":\"environment\",\"message\":\"Extension setting 'useFlock'
-  is set to value 'true'\",\"details\":\"Whether to use `flock` for creating
-  lockfiles on Linux remotes instead of `ln`. By default, we use `flock` on
-  Linux remotes and `ln` on
-  macOS.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'lockfilesInTmp' is set to value 'false'\",\"details\":\"Whether to keep
-  lockfiles in `/tmp` instead of in the server's install folder. Useful for
-  connecting to hosts which have issues with locking, such as hosts with a home
-  directory using NFS or another distributed
-  filesystem.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'localServerDownload' is set to value 'auto'\",\"details\":\"Whether the
-  extension can download the VS Code Server on the client and transfer it to the
-  host with scp, instead of downloading it on the
-  host.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'remoteServerListenOnSocket' is set to value 'false'\",\"details\":\"When
-  true, the remote VS Code server will listen on a socket path instead of
-  opening a port. Only valid for Linux and macOS remotes. After toggling this
-  setting, run the command \\\"Kill VS Code Server on Host...\\\" for it to take
-  effect. Requires OpenSSH 6.7+. Disables the \\\"local server\\\" connection
-  multiplexing mode. Requires `AllowStreamLocalForwarding` to be enabled for the
-  SSH server.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'defaultExtensions' is set to value '[]'\",\"details\":\"List of extensions
-  that should be installed automatically on all SSH
-  hosts.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'defaultExtensionsIfInstalledLocally' is set to value
-  '[]'\"},{\"type\":\"environment\",\"message\":\"Extension setting 'loglevel'
-  is set to value '2'\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'enableDynamicForwarding' is set to value
-  'true'\",\"details\":\"Whether to use SSH dynamic forwarding to allow setting
-  up new port tunnels over an existing SSH connection. When this is used, a
-  password only needs to be entered once for each remote
-  window.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'enableRemoteCommand' is set to value
-  'false'\",\"details\":\"**Experimental:** Enable using RemoteCommands from ssh
-  config entries. This is only enabled if `#remote.SSH.useLocalServer#` is
-  enabled as well and the remote you are trying to connect to is not listed
-  under the `#remote.SSH.remotePlatform#`
-  setting.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'serverPickPortsFromRange' is set to value '{}'\",\"details\":\"A map of the
-  remote hostname to a range of ports you'd prefer the server to connect to on
-  launch on the **remote** machine. If no free port is found in range, an error
-  will be thrown. Valid ranges of the form `number-number` such as `4000-5000`;
-  it's expected the first number will be lower than the
-  next.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'serverInstallPath' is set to value '{}'\",\"details\":\"A map of remote host
-  to absolute path where the VS Code server will be installed. By default the
-  server is installed in the home directory of every remote. **Note**: By
-  changing this setting you may need to clean up other installations of
-  `.vscode-server` on your remote that isn't in the path you've
-  configured.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'permitPtyAllocation' is set to value 'false'\",\"details\":\"Permits the
-  system to allocate a pseudo-terminal for the SSH connection (by omitting the
-  '-T' SSH connection flag). This setting is disabled by default and may be
-  enabled to support specific
-  use-cases.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'preferredLocalPortRange' is set to value 'undefined'\",\"details\":\"A range
-  of **local** ports preferred to utilize for the SSH tunnel connection. If no
-  free port is found in range, an error will be thrown. Valid ranges of the form
-  `number-number` such as `4000-5000`; it's expected the first number will be
-  lower than the next.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'useCurlAndWgetConfigurationFiles' is set to value
-  'false'\",\"details\":\"Respect configuration from remote environment's
-  'curlrc' and 'wgetrc' files (placed in their respective default
-  locations).  Enabling this setting may be useful in certain cases (i.e: proxy
-  configuration) but can interfere with this extension's operation. Setting may
-  be ignored on platforms that do not support the necessary flags (i.e:
-  busybox).\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'experimental.chat' is set to value 'true'\",\"details\":\"Enables an
-  experimental Copilot Chat Participant.  Use natural language to learn about
-  Remote - SSH and diagnose connection issues.  For the best experience, use VS
-  Code Insiders and ensure you have the latest Copilot Chat extension
-  installed.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'experimental.enhancedSessionLogs' is set to value
-  'true'\",\"details\":\"Generates a summarized table of issues detected from
-  the previous session.\"},{\"type\":\"environment\",\"message\":\"Extension
-  setting 'httpProxy' is set to value '{\\\"*\\\":\\\"\\\"}'\",\"details\":\"Set
-  the 'http_proxy' environment variable.  This will be set for install and
-  launch of the remote VS Code Server. Provide a string to set for all hosts, or
-  an object with per-host configuration. Kill existing server on the remote for
-  this setting to take
-  effect.\"},{\"type\":\"environment\",\"message\":\"Extension setting
-  'httpsProxy' is set to value '{\\\"*\\\":\\\"\\\"}'\",\"details\":\"Set the
-  'https_proxy' environment variable.  This will be set for install and launch
-  of the remote VS Code Server. Provide a string to set for all hosts, or an
-  object with per-host configuration. Kill existing server on the remote for
-  this setting to take effect.\"},{\"type\":\"log\",\"message\":\"[08:23:17.463]
-  Log Level: 2\\n[08:23:17.481] VS Code version: 1.106.2\\n[08:23:17.481]
-  Remote-SSH version: remote-ssh@0.120.0\\n[08:23:17.481] win32
-  x64\\n[08:23:17.486] SSH Resolver called for \\\"ssh-remote+gtr-arch\\\",
-  attempt 1\\n[08:23:17.491] remote.SSH.useLocalServer = false\\n[08:23:17.491]
-  remote.SSH.useExecServer = true\\n[08:23:17.491] remote.SSH.bindHost =
-  {}\\n[08:23:17.491] remote.SSH.showLoginTerminal = false\\n[08:23:17.491]
-  remote.SSH.remotePlatform = {\\\"gtr-arch\\\":\\\"linux\\\"}\\n[08:23:17.492]
-  remote.SSH.path = \\n[08:23:17.492] remote.SSH.configFile = \\n[08:23:17.492]
-  remote.SSH.useFlock = true\\n[08:23:17.492] remote.SSH.lockfilesInTmp =
-  false\\n[08:23:17.492] remote.SSH.localServerDownload = auto\\n[08:23:17.492]
-  remote.SSH.remoteServerListenOnSocket = false\\n[08:23:17.492]
-  remote.SSH.defaultExtensions = []\\n[08:23:17.492]
-  remote.SSH.defaultExtensionsIfInstalledLocally = []\\n[08:23:17.492]
-  remote.SSH.loglevel = 2\\n[08:23:17.493] remote.SSH.enableDynamicForwarding =
-  true\\n[08:23:17.493] remote.SSH.enableRemoteCommand = false\\n[08:23:17.493]
-  remote.SSH.serverPickPortsFromRange = {}\\n[08:23:17.493]
-  remote.SSH.serverInstallPath = {}\\n[08:23:17.493]
-  remote.SSH.permitPtyAllocation = false\\n[08:23:17.493]
-  remote.SSH.preferredLocalPortRange = undefined\\n[08:23:17.493]
-  remote.SSH.useCurlAndWgetConfigurationFiles = false\\n[08:23:17.493]
-  remote.SSH.experimental.chat = true\\n[08:23:17.494]
-  remote.SSH.experimental.enhancedSessionLogs = true\\n[08:23:17.494]
-  remote.SSH.httpProxy = {\\\"*\\\":\\\"\\\"}\\n[08:23:17.494]
-  remote.SSH.httpsProxy = {\\\"*\\\":\\\"\\\"}\\n[08:23:17.502] Found relevant
-  configuration for host gtr-arch in JSON data\\n[08:23:17.502] SSH Resolver
-  called for host: gtr-arch\\n[08:23:17.502] Setting up SSH remote
-  \\\"gtr-arch\\\"\\n[08:23:17.511] Using commit id
-  \\\"1e3c50d64110be466c0b4a45222e81d2c9352888\\\" and quality \\\"stable\\\"
-  for server\\n[08:23:17.511] Extensions to install: \\n[08:23:17.516] Install
-  and start server if needed\\n[08:23:17.519] Checking ssh with
-  \\\"C:\\\\Windows\\\\system32\\\\ssh.exe -V\\\"\\n[08:23:17.521] Got error
-  from ssh: spawn C:\\\\Windows\\\\system32\\\\ssh.exe ENOENT\\n[08:23:17.521]
-  Checking ssh with \\\"C:\\\\Windows\\\\ssh.exe -V\\\"\\n[08:23:17.522] Got
-  error from ssh: spawn C:\\\\Windows\\\\ssh.exe ENOENT\\n[08:23:17.522]
-  Checking ssh with \\\"C:\\\\Windows\\\\System32\\\\Wbem\\\\ssh.exe
-  -V\\\"\\n[08:23:17.523] Got error from ssh: spawn
-  C:\\\\Windows\\\\System32\\\\Wbem\\\\ssh.exe ENOENT\\n[08:23:17.523] Checking
-  ssh with \\\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\ssh.exe
-  -V\\\"\\n[08:23:17.525] Got error from ssh: spawn
-  C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\ssh.exe
-  ENOENT\\n[08:23:17.525] Checking ssh with
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe -V\\\"\\n[08:23:17.559] >
-  OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2\\n\\n[08:23:17.562] Running script
-  with connection command:
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 58990
-  \\\"gtr-arch\\\" sh\\n[08:23:17.564] Generated SSH command: 'type
-  \\\"C:\\\\Users\\\\gtr\\\\AppData\\\\Local\\\\Temp\\\\vscode-linux-multi-line\
-  -command-gtr-arch-213929060.sh\\\" |
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 58990
-  \\\"gtr-arch\\\" sh'\\n[08:23:17.564] Detected connect timeout of 0. Setting
-  maximum timeout.\\n[08:23:17.565] Terminal shell path:
-  C:\\\\Windows\\\\System32\\\\cmd.exe\\n[08:23:17.786] > \\n[08:23:17.786] Got
-  some output, clearing connection timeout\\n[08:23:17.801] > \\n[08:23:18.205]
-  > 56619e56cf8b: running\\n> Script executing under PID:
-  142482\\n[08:23:18.236] > Found existing installation at
-  /home/gtr/.vscode-server...\\n> Starting VS Code CLI...\\n[08:23:18.252] >
-  Removing old logfile at
-  /home/gtr/.vscode-server/.cli.1e3c50d64110be466c0b4a4522\\n>
-  2e81d2c9352888.log\\n> Spawned remote CLI: 142501\\n> Waiting for server
-  log...\\n[08:23:18.281] > Waiting for server log...\\n[08:23:18.313] >
-  56619e56cf8b: start\\n> listeningOn==127.0.0.1:41125==\\n>
-  osReleaseId==arch==\\n> arch==x86_64==\\n> vscodeArch==x64==\\n>
-  bitness==64==\\n> tmpDir==/run/user/1000==\\n> platform==linux==\\n>
-  unpackResult====\\n> didLocalDownload==0==\\n> downloadTime====\\n>
-  installTime====\\n> serverStartTime==82==\\n>
-  execServerToken==1111a1a1-a111-11a1-a111-111a1111a111==\\n>
-  platformDownloadPath==cli-alpine-x64==\\n> SSH_AUTH_SOCK====\\n>
-  DISPLAY====\\n> 56619e56cf8b: end\\n[08:23:18.313] Received install output:
-  \\nlisteningOn==127.0.0.1:41125==\\nosReleaseId==arch==\\narch==x86_64==\\nvs\
-  codeArch==x64==\\nbitness==64==\\ntmpDir==/run/user/1000==\\nplatform==linux==\
-  \\nunpackResult====\\ndidLocalDownload==0==\\ndownloadTime====\\ninstallTime=\
-  ===\\nserverStartTime==82==\\nexecServerToken==1111a1a1-a111-11a1-a111-111a11\
-  11a111==\\nplatformDownloadPath==cli-alpine-x64==\\nSSH_AUTH_SOCK====\\nDISPL\
-  AY====\\n\\n[08:23:18.314] Remote server is listening on port
-  41125\\n[08:23:18.314] Parsed server configuration:
-  {\\\"serverConfiguration\\\":{\\\"remoteListeningOn\\\":{\\\"port\\\":41125},\
-  \\\"osReleaseId\\\":\\\"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"sshAuthSock\\\
-  \":\\\"\\\",\\\"display\\\":\\\"\\\",\\\"tmpDir\\\":\\\"/run/user/1000\\\",\\\
-  \"platform\\\":\\\"linux\\\",\\\"execServerToken\\\":\\\"1111a1a1-a111-11a1-a\
-  111-111a1111a111\\\"},\\\"serverStartTime\\\":82,\\\"installUnpackCode\\\":\\\
-  \"\\\"}\\n[08:23:18.316] Starting forwarding server. local port 58992 ->
-  socksPort 58990 -> remotePort 41125\\n[08:23:18.317] Forwarding server
-  listening on port 58992\\n[08:23:18.317] Waiting for ssh tunnel to be
-  ready\\n[08:23:18.318] [Forwarding server port 58992] Got connection
-  0\\n[08:23:18.319] Tunneled port 41125 to local port 58992\\n[08:23:18.319]
-  Resolved \\\"ssh-remote+gtr-arch\\\" to \\\"port 58992\\\"\\n[08:23:18.326]
-  Initizing new exec server for ssh-remote+gtr-arch\\n[08:23:18.326] Resolving
-  exec server at port 58992\\n[08:23:18.328] [Forwarding server port 58992] Got
-  connection 1\\n[08:23:18.331] > \\n[08:23:18.428] Exec server for
-  ssh-remote+gtr-arch created and cached\\n[08:23:18.428] Extensions to install:
-  \\n[08:23:18.429] Updating terminal environments: {}\\n[08:23:18.432]
-  TELEMETRY:
-  {\\\"eventName\\\":\\\"resolver\\\",\\\"properties\\\":{\\\"osReleaseId\\\":\\\
-  \"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"askedPw\\\":\\\"0\\\",\\\"askedPas\
-  sphrase\\\":\\\"0\\\",\\\"asked2fa\\\":\\\"0\\\",\\\"askedHostKey\\\":\\\"0\\\
-  \",\\\"remoteInConfigFile\\\":\\\"1\\\",\\\"gotUnrecognizedPrompt\\\":\\\"0\\\
-  \",\\\"dynamicForwarding\\\":\\\"1\\\",\\\"localServer\\\":\\\"0\\\",\\\"didL\
-  ocalDownload\\\":\\\"0\\\",\\\"installUnpackCode\\\":\\\"0\\\",\\\"outcome\\\
-  \":\\\"success\\\"},\\\"measures\\\":{\\\"resolveAttempts\\\":1,\\\"retries\\\
-  \":1,\\\"isExecServer\\\":1,\\\"timing.totalResolveTime\\\":946,\\\"timing.pr\
-  eSshTime\\\":79,\\\"timing.establishSshTime\\\":642,\\\"timing.scriptTime\\\"\
-  :749,\\\"timing.serverStartTime\\\":82}}\\n[08:23:18.434]
-  ------\\n\\n\\n\\n\"},{\"type\":\"log\",\"message\":\"[08:23:17.463] Log
-  Level: 2\\n[08:23:17.481] VS Code version: 1.106.2\\n[08:23:17.481] Remote-SSH
-  version: remote-ssh@0.120.0\\n[08:23:17.481] win32 x64\\n[08:23:17.486] SSH
-  Resolver called for \\\"ssh-remote+gtr-arch\\\", attempt 1\\n[08:23:17.491]
-  remote.SSH.useLocalServer = false\\n[08:23:17.491] remote.SSH.useExecServer =
-  true\\n[08:23:17.491] remote.SSH.bindHost = {}\\n[08:23:17.491]
-  remote.SSH.showLoginTerminal = false\\n[08:23:17.491]
-  remote.SSH.remotePlatform = {\\\"gtr-arch\\\":\\\"linux\\\"}\\n[08:23:17.492]
-  remote.SSH.path = \\n[08:23:17.492] remote.SSH.configFile = \\n[08:23:17.492]
-  remote.SSH.useFlock = true\\n[08:23:17.492] remote.SSH.lockfilesInTmp =
-  false\\n[08:23:17.492] remote.SSH.localServerDownload = auto\\n[08:23:17.492]
-  remote.SSH.remoteServerListenOnSocket = false\\n[08:23:17.492]
-  remote.SSH.defaultExtensions = []\\n[08:23:17.492]
-  remote.SSH.defaultExtensionsIfInstalledLocally = []\\n[08:23:17.492]
-  remote.SSH.loglevel = 2\\n[08:23:17.493] remote.SSH.enableDynamicForwarding =
-  true\\n[08:23:17.493] remote.SSH.enableRemoteCommand = false\\n[08:23:17.493]
-  remote.SSH.serverPickPortsFromRange = {}\\n[08:23:17.493]
-  remote.SSH.serverInstallPath = {}\\n[08:23:17.493]
-  remote.SSH.permitPtyAllocation = false\\n[08:23:17.493]
-  remote.SSH.preferredLocalPortRange = undefined\\n[08:23:17.493]
-  remote.SSH.useCurlAndWgetConfigurationFiles = false\\n[08:23:17.493]
-  remote.SSH.experimental.chat = true\\n[08:23:17.494]
-  remote.SSH.experimental.enhancedSessionLogs = true\\n[08:23:17.494]
-  remote.SSH.httpProxy = {\\\"*\\\":\\\"\\\"}\\n[08:23:17.494]
-  remote.SSH.httpsProxy = {\\\"*\\\":\\\"\\\"}\\n[08:23:17.502] Found relevant
-  configuration for host gtr-arch in JSON data\\n[08:23:17.502] SSH Resolver
-  called for host: gtr-arch\\n[08:23:17.502] Setting up SSH remote
-  \\\"gtr-arch\\\"\\n[08:23:17.511] Using commit id
-  \\\"1e3c50d64110be466c0b4a45222e81d2c9352888\\\" and quality \\\"stable\\\"
-  for server\\n[08:23:17.511] Extensions to install: \\n[08:23:17.516] Install
-  and start server if needed\\n[08:23:17.519] Checking ssh with
-  \\\"C:\\\\Windows\\\\system32\\\\ssh.exe -V\\\"\\n[08:23:17.521] Got error
-  from ssh: spawn C:\\\\Windows\\\\system32\\\\ssh.exe ENOENT\\n[08:23:17.521]
-  Checking ssh with \\\"C:\\\\Windows\\\\ssh.exe -V\\\"\\n[08:23:17.522] Got
-  error from ssh: spawn C:\\\\Windows\\\\ssh.exe ENOENT\\n[08:23:17.522]
-  Checking ssh with \\\"C:\\\\Windows\\\\System32\\\\Wbem\\\\ssh.exe
-  -V\\\"\\n[08:23:17.523] Got error from ssh: spawn
-  C:\\\\Windows\\\\System32\\\\Wbem\\\\ssh.exe ENOENT\\n[08:23:17.523] Checking
-  ssh with \\\"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\ssh.exe
-  -V\\\"\\n[08:23:17.525] Got error from ssh: spawn
-  C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\ssh.exe
-  ENOENT\\n[08:23:17.525] Checking ssh with
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe -V\\\"\\n[08:23:17.559] >
-  OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2\\n\\n[08:23:17.562] Running script
-  with connection command:
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 58990
-  \\\"gtr-arch\\\" sh\\n[08:23:17.564] Generated SSH command: 'type
-  \\\"C:\\\\Users\\\\gtr\\\\AppData\\\\Local\\\\Temp\\\\vscode-linux-multi-line\
-  -command-gtr-arch-213929060.sh\\\" |
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 58990
-  \\\"gtr-arch\\\" sh'\\n[08:23:17.564] Detected connect timeout of 0. Setting
-  maximum timeout.\\n[08:23:17.565] Terminal shell path:
-  C:\\\\Windows\\\\System32\\\\cmd.exe\\n[08:23:17.786] > \\n[08:23:17.786] Got
-  some output, clearing connection timeout\\n[08:23:17.801] > \\n[08:23:18.205]
-  > 56619e56cf8b: running\\n> Script executing under PID:
-  142482\\n[08:23:18.236] > Found existing installation at
-  /home/gtr/.vscode-server...\\n> Starting VS Code CLI...\\n[08:23:18.252] >
-  Removing old logfile at
-  /home/gtr/.vscode-server/.cli.1e3c50d64110be466c0b4a4522\\n>
-  2e81d2c9352888.log\\n> Spawned remote CLI: 142501\\n> Waiting for server
-  log...\\n[08:23:18.281] > Waiting for server log...\\n[08:23:18.313] >
-  56619e56cf8b: start\\n> listeningOn==127.0.0.1:41125==\\n>
-  osReleaseId==arch==\\n> arch==x86_64==\\n> vscodeArch==x64==\\n>
-  bitness==64==\\n> tmpDir==/run/user/1000==\\n> platform==linux==\\n>
-  unpackResult====\\n> didLocalDownload==0==\\n> downloadTime====\\n>
-  installTime====\\n> serverStartTime==82==\\n>
-  execServerToken==1111a1a1-a111-11a1-a111-111a1111a111==\\n>
-  platformDownloadPath==cli-alpine-x64==\\n> SSH_AUTH_SOCK====\\n>
-  DISPLAY====\\n> 56619e56cf8b: end\\n[08:23:18.313] Received install output:
-  \\nlisteningOn==127.0.0.1:41125==\\nosReleaseId==arch==\\narch==x86_64==\\nvs\
-  codeArch==x64==\\nbitness==64==\\ntmpDir==/run/user/1000==\\nplatform==linux==\
-  \\nunpackResult====\\ndidLocalDownload==0==\\ndownloadTime====\\ninstallTime=\
-  ===\\nserverStartTime==82==\\nexecServerToken==1111a1a1-a111-11a1-a111-111a11\
-  11a111==\\nplatformDownloadPath==cli-alpine-x64==\\nSSH_AUTH_SOCK====\\nDISPL\
-  AY====\\n\\n[08:23:18.314] Remote server is listening on port
-  41125\\n[08:23:18.314] Parsed server configuration:
-  {\\\"serverConfiguration\\\":{\\\"remoteListeningOn\\\":{\\\"port\\\":41125},\
-  \\\"osReleaseId\\\":\\\"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"sshAuthSock\\\
-  \":\\\"\\\",\\\"display\\\":\\\"\\\",\\\"tmpDir\\\":\\\"/run/user/1000\\\",\\\
-  \"platform\\\":\\\"linux\\\",\\\"execServerToken\\\":\\\"1111a1a1-a111-11a1-a\
-  111-111a1111a111\\\"},\\\"serverStartTime\\\":82,\\\"installUnpackCode\\\":\\\
-  \"\\\"}\\n[08:23:18.316] Starting forwarding server. local port 58992 ->
-  socksPort 58990 -> remotePort 41125\\n[08:23:18.317] Forwarding server
-  listening on port 58992\\n[08:23:18.317] Waiting for ssh tunnel to be
-  ready\\n[08:23:18.318] [Forwarding server port 58992] Got connection
-  0\\n[08:23:18.319] Tunneled port 41125 to local port 58992\\n[08:23:18.319]
-  Resolved \\\"ssh-remote+gtr-arch\\\" to \\\"port 58992\\\"\\n[08:23:18.326]
-  Initizing new exec server for ssh-remote+gtr-arch\\n[08:23:18.326] Resolving
-  exec server at port 58992\\n[08:23:18.328] [Forwarding server port 58992] Got
-  connection 1\\n[08:23:18.331] > \\n[08:23:18.428] Exec server for
-  ssh-remote+gtr-arch created and cached\\n[08:23:18.428] Extensions to install:
-  \\n[08:23:18.429] Updating terminal environments: {}\\n[08:23:18.432]
-  TELEMETRY:
-  {\\\"eventName\\\":\\\"resolver\\\",\\\"properties\\\":{\\\"osReleaseId\\\":\\\
-  \"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"askedPw\\\":\\\"0\\\",\\\"askedPas\
-  sphrase\\\":\\\"0\\\",\\\"asked2fa\\\":\\\"0\\\",\\\"askedHostKey\\\":\\\"0\\\
-  \",\\\"remoteInConfigFile\\\":\\\"1\\\",\\\"gotUnrecognizedPrompt\\\":\\\"0\\\
-  \",\\\"dynamicForwarding\\\":\\\"1\\\",\\\"localServer\\\":\\\"0\\\",\\\"didL\
-  ocalDownload\\\":\\\"0\\\",\\\"installUnpackCode\\\":\\\"0\\\",\\\"outcome\\\
-  \":\\\"success\\\"},\\\"measures\\\":{\\\"resolveAttempts\\\":1,\\\"retries\\\
-  \":1,\\\"isExecServer\\\":1,\\\"timing.totalResolveTime\\\":946,\\\"timing.pr\
-  eSshTime\\\":79,\\\"timing.establishSshTime\\\":642,\\\"timing.scriptTime\\\"\
-  :749,\\\"timing.serverStartTime\\\":82}}\\n[08:23:18.434]
-  ------\\n\\n\\n\\n\\n[08:23:18.434] No hints found in the recent
-  session.\\n[08:23:18.446] [server] Checking
-  /home/gtr/.vscode-server/cli/servers/Stable-1e3c50d64110be466c0b4a45222e81d2c\
-  9352888/log.txt and
-  /home/gtr/.vscode-server/cli/servers/Stable-1e3c50d64110be466c0b4a45222e81d2c\
-  9352888/pid.txt for a running server...\\n[08:23:18.487] [server] Found
-  running server (pid=141872)\\n[08:23:26.862] TELEMETRY:
-  {\\\"eventName\\\":\\\"extraInfo\\\",\\\"properties\\\":{\\\"remoteCloud\\\":\
-  \\\"\\\"},\\\"measures\\\":{}}\\n[08:35:48.087] > client_loop: send
-  disconnect: Connection reset\\n[08:35:49.398] \\\"install\\\" terminal command
-  done\\n[08:35:49.398] Install terminal quit with output:     client_loop: send
-  disconnect: Connection reset\\n[08:40:01.015]
-  ------\\n\\n\\n\\n\\n[08:40:01.015] SSH Resolver called for
-  \\\"ssh-remote+gtr-arch\\\", attempt 2, (Reconnection)\\n[08:40:01.017] Found
-  relevant configuration for host gtr-arch in JSON data\\n[08:40:01.017] SSH
-  Resolver called for host: gtr-arch\\n[08:40:01.017] Setting up SSH remote
-  \\\"gtr-arch\\\"\\n[08:40:01.020] Using commit id
-  \\\"1e3c50d64110be466c0b4a45222e81d2c9352888\\\" and quality \\\"stable\\\"
-  for server\\n[08:40:01.020] Extensions to install: \\n[08:40:01.024] Install
-  and start server if needed\\n[08:40:01.028] Running script with connection
-  command: \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 50271
-  \\\"gtr-arch\\\" sh\\n[08:40:01.030] Generated SSH command: 'type
-  \\\"C:\\\\Users\\\\gtr\\\\AppData\\\\Local\\\\Temp\\\\vscode-linux-multi-line\
-  -command-gtr-arch-842873527.sh\\\" |
-  \\\"C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe\\\" -T -D 50271
-  \\\"gtr-arch\\\" sh'\\n[08:40:01.030] Detected connect timeout of 0. Setting
-  maximum timeout.\\n[08:40:01.030] Terminal shell path:
-  C:\\\\Windows\\\\System32\\\\cmd.exe\\n[08:40:01.252] > \\n[08:40:01.252] Got
-  some output, clearing connection timeout\\n[08:40:01.266] > \\n[08:40:01.580]
-  > c9f2cc388526: running\\n> Script executing under PID:
-  144433\\n[08:40:01.610] > Found existing installation at
-  /home/gtr/.vscode-server...\\n> Starting VS Code CLI...\\n[08:40:01.626] >
-  Removing old logfile at
-  /home/gtr/.vscode-server/.cli.1e3c50d64110be466c0b4a4522\\n>
-  2e81d2c9352888.log\\n> Spawned remote CLI: 144452\\n> Waiting for server
-  log...\\n[08:40:01.656] > Waiting for server log...\\n[08:40:01.687] >
-  c9f2cc388526: start\\n> listeningOn==127.0.0.1:41109==\\n>
-  osReleaseId==arch==\\n> arch==x86_64==\\n> vscodeArch==x64==\\n>
-  bitness==64==\\n> tmpDir==/run/user/1000==\\n> platform==linux==\\n>
-  unpackResult====\\n> didLocalDownload==0==\\n> downloadTime====\\n>
-  installTime====\\n> serverStartTime==82==\\n>
-  execServerToken==11111a1a-111a-1111-aaaa-a1aaa11a1a11==\\n>
-  platformDownloadPath==cli-alpine-x64==\\n> SSH_AUTH_SOCK====\\n>
-  DISPLAY====\\n> c9f2cc388526: end\\n[08:40:01.687] Received install output:
-  \\nlisteningOn==127.0.0.1:41109==\\nosReleaseId==arch==\\narch==x86_64==\\nvs\
-  codeArch==x64==\\nbitness==64==\\ntmpDir==/run/user/1000==\\nplatform==linux==\
-  \\nunpackResult====\\ndidLocalDownload==0==\\ndownloadTime====\\ninstallTime=\
-  ===\\nserverStartTime==82==\\nexecServerToken==11111a1a-111a-1111-aaaa-a1aaa1\
-  1a1a11==\\nplatformDownloadPath==cli-alpine-x64==\\nSSH_AUTH_SOCK====\\nDISPL\
-  AY====\\n\\n[08:40:01.688] Remote server is listening on port
-  41109\\n[08:40:01.688] Parsed server configuration:
-  {\\\"serverConfiguration\\\":{\\\"remoteListeningOn\\\":{\\\"port\\\":41109},\
-  \\\"osReleaseId\\\":\\\"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"sshAuthSock\\\
-  \":\\\"\\\",\\\"display\\\":\\\"\\\",\\\"tmpDir\\\":\\\"/run/user/1000\\\",\\\
-  \"platform\\\":\\\"linux\\\",\\\"execServerToken\\\":\\\"11111a1a-111a-1111-a\
-  aaa-a1aaa11a1a11\\\"},\\\"serverStartTime\\\":82,\\\"installUnpackCode\\\":\\\
-  \"\\\"}\\n[08:40:01.690] Starting forwarding server. local port 50273 ->
-  socksPort 50271 -> remotePort 41109\\n[08:40:01.690] Forwarding server
-  listening on port 50273\\n[08:40:01.691] Waiting for ssh tunnel to be
-  ready\\n[08:40:01.691] [Forwarding server port 50273] Got connection
-  0\\n[08:40:01.691] Tunneled port 41109 to local port 50273\\n[08:40:01.692]
-  Resolved \\\"ssh-remote+gtr-arch\\\" to \\\"port 50273\\\"\\n[08:40:01.718] >
-  \\n[08:40:04.698] Existing exec server for ssh-remote+gtr-arch timed
-  out\\n[08:40:04.698] Initizing new exec server for
-  ssh-remote+gtr-arch\\n[08:40:04.699] Resolving exec server at port
-  50273\\n[08:40:04.700] [Forwarding server port 50273] Got connection
-  1\\n[08:40:04.749] Exec server for ssh-remote+gtr-arch created and
-  cached\\n[08:40:04.750] Extensions to install: \\n[08:40:04.750] Updating
-  terminal environments: {}\\n[08:40:04.752] TELEMETRY:
-  {\\\"eventName\\\":\\\"resolver\\\",\\\"properties\\\":{\\\"osReleaseId\\\":\\\
-  \"arch\\\",\\\"arch\\\":\\\"x86_64\\\",\\\"askedPw\\\":\\\"0\\\",\\\"askedPas\
-  sphrase\\\":\\\"0\\\",\\\"asked2fa\\\":\\\"0\\\",\\\"askedHostKey\\\":\\\"0\\\
-  \",\\\"remoteInConfigFile\\\":\\\"1\\\",\\\"gotUnrecognizedPrompt\\\":\\\"0\\\
-  \",\\\"dynamicForwarding\\\":\\\"1\\\",\\\"localServer\\\":\\\"0\\\",\\\"didL\
-  ocalDownload\\\":\\\"0\\\",\\\"installUnpackCode\\\":\\\"0\\\",\\\"outcome\\\
-  \":\\\"success\\\"},\\\"measures\\\":{\\\"resolveAttempts\\\":2,\\\"retries\\\
-  \":1,\\\"isExecServer\\\":1,\\\"timing.totalResolveTime\\\":3736,\\\"timing.p\
-  reSshTime\\\":15,\\\"timing.establishSshTime\\\":550,\\\"timing.scriptTime\\\
-  \":657,\\\"timing.serverStartTime\\\":82}}\\n[08:40:04.753]
-  ------\\n\\n\\n\\n\"}],\"createdAt\":\"2025-12-05T00:23:17.465Z\"}],\"folder.\
-  history.v1\":{\"gtr-arch\":[\"/data/config/rules\"]}}"
-workbench.activity.pinnedViewlets2: '[{"id":"workbench.view.explorer","pinned":true,"visible":true,"order":0},{"id":"workbench.view.search","pinned":true,"visible":true,"order":1},{"id":"workbench.view.scm","pinned":true,"visible":true,"order":2},{"id":"workbench.view.debug","pinned":true,"visible":true,"order":3},{"id":"workbench.view.remote","pinned":true,"visible":true,"order":4},{"id":"workbench.view.extensions","pinned":true,"visible":true,"order":4},{"id":"workbench.view.chat.sessions","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.test","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.references-view","pinned":true,"visible":false,"order":7},{"id":"workbench.view.extension.github-copilot-completions-debugger-panel","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.github-pull-requests","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.trae","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.TongyiLingma","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.python","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.copilot-chat","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.context-inspector","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.jupyter","pinned":true,"visible":false,"order":11},{"id":"workbench.view.extension.coding-copilot","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.package-explorer","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.github-pull-request","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.coding-copilot-chat","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.l13Diff","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.fittencode","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.coding-copilot-webviews-login","pinned":true,"visible":false,"order":11},{"id":"workbench.view.extension.gitlens","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.nowcoder","pinned":true,"visible":false,"order":17},{"id":"workbench.view.extension.foldersCompare","pinned":true,"visible":false,"order":12},{"id":"workbench.view.extension.gitlensInspect","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.cpp__viewContainer","pinned":true,"visible":false,"order":18},{"id":"workbench.view.extension.hdn-toolkit-extension","pinned":true,"visible":false,"order":18},{"id":"workbench.view.extension.cmake__viewContainer","pinned":true,"visible":false,"order":15},{"id":"workbench.view.extension.PowerShellCommandExplorer","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.anes","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.treeView","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.copilot-sidebar-webview","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.xmake-explorer","pinned":true,"visible":false,"order":12},{"id":"workbench.view.extension.tabnine-access","pinned":true,"visible":false,"order":14},{"id":"workbench.view.extension.chatgpt-china-view-container","pinned":true,"visible":false,"order":18},{"id":"workbench.view.extension.trunkContainer","pinned":true,"visible":false,"order":16},{"id":"workbench.view.extension.ppz-container","pinned":true,"visible":false,"order":15},{"id":"workbench.view.extension.localHistory","pinned":true,"visible":false,"order":15},{"id":"workbench.view.extension.crossnote","pinned":true,"visible":false,"order":16},{"id":"workbench.view.extension.gitlensPatch","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.marimo-explorer","pinned":true,"visible":false,"order":19},{"id":"workbench.panel.chatSidebar","pinned":true,"visible":false,"order":100},{"id":"workbench.view.sync","pinned":true,"visible":false},{"id":"workbench.view.editSessions","pinned":true,"visible":false},{"id":"userDataProfiles","pinned":true,"visible":false}]'
+  Community","bundle":false,"cancelled":false,"trialReactivationCount":0,"startedOn":"2025-11-23T01:45:55.381Z"}},"state":0}},"gitlens:gk:cli:install":{"status":"completed","attempts":1,"version":"3.1.48"},"gitlens:version":"17.8.0","gitlens:launchpad:indicator:hasLoaded":true,"gitlens:gk:cli:path":"d:\\scoop\\apps\\vscode\\1.106.2\\data\\user-data\\User\\globalStorage\\eamodio.gitlens","gitlens:gk:cli:corePath":"C:\\Users\\gtr\\AppData\\Local\\GitKrakenCLI","gitlens:repoVisibility":[["d:/Obsidian",{"visibility":"private","timestamp":1763862497519,"remotesHash":"github.com/hhsjsth/Obsidian"}],["d:/scoop/buckets/apps",{"visibility":"public","timestamp":1765515408435,"remotesHash":"github.com/kkzzhizhou/scoop-apps"}],["d:/repo/leetcode_cpp",{"visibility":"public","timestamp":1765805034427,"remotesHash":"github.com/hhsjsth/leetcode_cpp"}],["d:/repo/CodingInterviewChinese2",{"visibility":"public","timestamp":1765805472063,"remotesHash":"github.com/zhedahht/CodingInterviewChinese2"}]],"gitlens:usages":{"command:gitlens.views.scm.grouped.welcome.dismiss:executed":{"count":1,"firstUsedAt":1763868500121,"lastUsedAt":1763868500121},"commitsView:shown":{"count":1,"firstUsedAt":1763868500414,"lastUsedAt":1763868500414},"command:gitlens.gitCommands.reset:executed":{"count":1,"firstUsedAt":1764233441354,"lastUsedAt":1764233441354},"command:gitlens.diffWithRevision:executed":{"count":1,"firstUsedAt":1764945591950,"lastUsedAt":1764945591950}},"gitlens:views:scm:grouped:welcome:dismissed":true}'
+workbench.activity.pinnedViewlets2: '[{"id":"workbench.view.explorer","pinned":true,"visible":true,"order":0},{"id":"workbench.view.search","pinned":true,"visible":true,"order":1},{"id":"workbench.view.scm","pinned":true,"visible":true,"order":2},{"id":"workbench.view.debug","pinned":true,"visible":true,"order":3},{"id":"workbench.view.remote","pinned":true,"visible":true,"order":4},{"id":"workbench.view.extensions","pinned":true,"visible":true,"order":4},{"id":"workbench.view.chat.sessions","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.test","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.references-view","pinned":true,"visible":false,"order":7},{"id":"workbench.view.extension.github-copilot-completions-debugger-panel","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.github-pull-requests","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.trae","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.TongyiLingma","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.python","pinned":true,"visible":false,"order":12},{"id":"workbench.view.extension.copilot-chat","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.context-inspector","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.jupyter","pinned":true,"visible":false,"order":11},{"id":"workbench.view.extension.coding-copilot","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.package-explorer","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.github-pull-request","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.coding-copilot-chat","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.l13Diff","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.fittencode","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.coding-copilot-webviews-login","pinned":true,"visible":false,"order":11},{"id":"workbench.view.extension.gitlens","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.nowcoder","pinned":true,"visible":false,"order":17},{"id":"workbench.view.extension.foldersCompare","pinned":true,"visible":false,"order":12},{"id":"workbench.view.extension.gitlensInspect","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.cpp__viewContainer","pinned":true,"visible":false,"order":18},{"id":"workbench.view.extension.hdn-toolkit-extension","pinned":true,"visible":false,"order":18},{"id":"workbench.view.extension.cmake__viewContainer","pinned":true,"visible":false,"order":15},{"id":"workbench.view.extension.PowerShellCommandExplorer","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.anes","pinned":true,"visible":false,"order":9},{"id":"workbench.view.extension.treeView","pinned":true,"visible":false,"order":8},{"id":"workbench.view.extension.copilot-sidebar-webview","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.xmake-explorer","pinned":true,"visible":false,"order":12},{"id":"workbench.view.extension.tabnine-access","pinned":true,"visible":false,"order":14},{"id":"workbench.view.extension.chatgpt-china-view-container","pinned":true,"visible":false,"order":18},{"id":"workbench.view.extension.trunkContainer","pinned":true,"visible":false,"order":16},{"id":"workbench.view.extension.ppz-container","pinned":true,"visible":false,"order":15},{"id":"workbench.view.extension.localHistory","pinned":true,"visible":false,"order":15},{"id":"workbench.view.extension.crossnote","pinned":true,"visible":false,"order":16},{"id":"workbench.view.extension.gitlensPatch","pinned":true,"visible":false,"order":10},{"id":"workbench.view.extension.marimo-explorer","pinned":true,"visible":false,"order":19},{"id":"workbench.panel.chatSidebar","pinned":true,"visible":false,"order":100},{"id":"workbench.view.sync","pinned":true,"visible":false},{"id":"workbench.view.editSessions","pinned":true,"visible":false},{"id":"userDataProfiles","pinned":true,"visible":false}]'
 workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   \"themeIcon\":{\"id\":\"explorer-view-icon\"},\"name\":\"Explorer\",\"isBuilt\
   in\":true,\"views\":[{},{},{},{\"when\":\"timelineHasProvider\"},{\"when\":\"\
@@ -691,9 +67,9 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   'pwa-node'\"},{\"when\":\"jsDebugNetworkAvailable\"}]},{\"id\":\"workbench.vi\
   ew.remote\",\"themeIcon\":{\"id\":\"remote-explorer-view-icon\"},\"name\":\"R\
   emote
-  Explorer\",\"isBuiltin\":true,\"views\":[{}]},{\"id\":\"workbench.view.extens\
-  ions\",\"themeIcon\":{\"id\":\"extensions-view-icon\"},\"name\":\"Extensions\
-  \",\"isBuiltin\":true,\"views\":[{\"when\":\"defaultExtensionViews &&
+  Explorer\",\"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.extensio\
+  ns\",\"themeIcon\":{\"id\":\"extensions-view-icon\"},\"name\":\"Extensions\",\
+  \"isBuiltin\":true,\"views\":[{\"when\":\"defaultExtensionViews &&
   extensionsGalleryStatus == 'accessDenied' || defaultExtensionViews &&
   extensionsGalleryStatus == 'requiresSignIn' || searchMarketplaceExtensions &&
   extensionsGalleryStatus == 'accessDenied' || searchMarketplaceExtensions &&
@@ -709,16 +85,18 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   !sortByUpdateDate\"},{\"when\":\"defaultExtensionViews &&
   hasInstalledExtensions\"},{\"when\":\"defaultExtensionViews &&
   hasInstalledMcpServers\"},{\"when\":\"config.chat.mcp.gallery.enabled &&
-  defaultExtensionViews && !chatSetupHidden && !hasInstalledMcpServers &&
-  mcpServersGalleryStatus == 'available' || config.chat.mcp.gallery.serviceUrl
-  && defaultExtensionViews && !chatSetupHidden && !hasInstalledMcpServers &&
-  mcpServersGalleryStatus == 'available' || defaultExtensionViews &&
-  !chatSetupHidden && !hasInstalledMcpServers && mcpServersGalleryStatus ==
-  'available' && productQualityType !=
+  defaultExtensionViews && !chatSetupHidden && !config.chat.disableAIFeatures &&
+  !hasInstalledMcpServers && mcpServersGalleryStatus == 'available' ||
+  config.chat.mcp.gallery.serviceUrl && defaultExtensionViews &&
+  !chatSetupHidden && !config.chat.disableAIFeatures && !hasInstalledMcpServers
+  && mcpServersGalleryStatus == 'available' || defaultExtensionViews &&
+  !chatSetupHidden && !config.chat.disableAIFeatures && !hasInstalledMcpServers
+  && mcpServersGalleryStatus == 'available' && productQualityType !=
   'stable'\"},{\"when\":\"defaultExtensionViews && !chatSetupHidden &&
-  !config.chat.mcp.gallery.enabled && !config.chat.mcp.gallery.serviceUrl &&
-  !hasInstalledMcpServers && mcpServersGalleryStatus == 'available' &&
-  productQualityType == 'stable'\"},{\"when\":\"defaultExtensionViews &&
+  !config.chat.disableAIFeatures && !config.chat.mcp.gallery.enabled &&
+  !config.chat.mcp.gallery.serviceUrl && !hasInstalledMcpServers &&
+  mcpServersGalleryStatus == 'available' && productQualityType ==
+  'stable'\"},{\"when\":\"defaultExtensionViews &&
   hasInstalledExtensions\"},{\"when\":\"hasGallery &&
   searchMarketplaceExtensions\"},{\"when\":\"installedExtensions ||
   searchInstalledExtensions\"},{\"when\":\"searchEnabledExtensions\"},{\"when\":\
@@ -741,9 +119,9 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   View\",\"defaults\":{\"id\":\"comment-discussion-sparkle\"}},\"name\":\"Agent
   Sessions\",\"isBuiltin\":true,\"views\":[{\"when\":\"!chatSetupDisabled &&
   !chatSetupHidden && config.chat.agentSessionsViewLocation ==
-  'view'\"},{\"when\":\"false\"}]},{\"id\":\"workbench.view.extension.test\",\"\
-  themeIcon\":{\"id\":\"test-view-icon\"},\"name\":\"Testing\",\"isBuiltin\":tr\
-  ue,\"views\":[{\"when\":\"testing.providerCount >
+  'view'\"}]},{\"id\":\"workbench.view.extension.test\",\"themeIcon\":{\"id\":\
+  \"test-view-icon\"},\"name\":\"Testing\",\"isBuiltin\":true,\"views\":[{\"when\
+  \":\"testing.providerCount >
   0\"},{\"when\":\"testing.isTestCoverageOpen\"}]},{\"id\":\"workbench.view.ext\
   ension.references-view\",\"themeIcon\":{\"id\":\"references\"},\"name\":\"Ref\
   erences\",\"isBuiltin\":false,\"views\":[{\"when\":\"reference-list.isActive\
@@ -752,8 +130,10 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   xtension.github-pull-requests\",\"isBuiltin\":false},{\"id\":\"workbench.view\
   .extension.trae\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.Ton\
   gyiLingma\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.python\",\
-  \"name\":\"Python\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.c\
-  opilot-chat\",\"name\":\"Chat
+  \"iconUrl\":{\"$mid\":1,\"path\":\"%%EXTENSION_DATA_PATH%%/ms-python.vscode-p\
+  ython-envs-1.10.0-universal/files/logo.svg\",\"scheme\":\"file\"},\"name\":\"\
+  Python\",\"isBuiltin\":false,\"views\":[]},{\"id\":\"workbench.view.extension\
+  .copilot-chat\",\"name\":\"Chat
   Debug\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.context-inspe\
   ctor\",\"name\":\"Language Context
   Inspector\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.jupyter\",\
@@ -805,38 +185,29 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   s.enabled && gitlens:views:patchDetails:mode &&
   !gitlens:untrusted\"}]},{\"id\":\"workbench.view.extension.marimo-explorer\",\
   \"isBuiltin\":false},{\"id\":\"workbench.panel.chatSidebar\",\"isBuiltin\":fa\
-  lse},{\"id\":\"workbench.view.sync\",\"themeIcon\":{\"id\":\"settings-sync-vi\
-  ew-icon\"},\"name\":\"Settings
-  Sync\",\"isBuiltin\":true,\"views\":[{\"when\":\"enableSyncConflictsView &&
-  hasConflicts\"},{\"when\":\"enableSyncActivityViews &&
-  userDataSyncAccountStatus == 'available' && syncStatus !=
-  'uninitialized'\"},{\"when\":\"enableSyncActivityViews &&
-  userDataSyncAccountStatus == 'available' && syncStatus !=
-  'uninitialized'\"},{\"when\":\"enableSyncActivityViews &&
-  userDataSyncAccountStatus == 'available' && syncStatus !=
-  'uninitialized'\"},{\"when\":\"enableSyncActivityViews\"},{\"when\":\"enableS\
-  yncActivityViews\"}]},{\"id\":\"workbench.view.editSessions\",\"themeIcon\":{\
-  \"id\":\"edit-sessions-view-icon\"},\"name\":\"Cloud
-  Changes\",\"isBuiltin\":true,\"views\":[]},{\"id\":\"userDataProfiles\",\"isB\
-  uiltin\":false}]"
+  lse},{\"id\":\"workbench.view.sync\",\"name\":\"Settings
+  Sync\",\"isBuiltin\":false},{\"id\":\"workbench.view.editSessions\",\"name\":\
+  \"Cloud
+  Changes\",\"isBuiltin\":false},{\"id\":\"userDataProfiles\",\"isBuiltin\":fal\
+  se}]"
 workbench.activityBar.location: default
-workbench.auxiliaryBar.empty: "false"
+workbench.auxiliaryBar.empty: "true"
 workbench.auxiliaryBar.lastNonMaximizedSize: "300"
 workbench.auxiliarybar.pinnedPanels: '[{"id":"terminal","pinned":true,"visible":false,"order":3},{"id":"workbench.panel.chat","pinned":true,"visible":false,"order":1},{"id":"workbench.viewContainer.agentSessions","pinned":true,"visible":false,"order":6},{"id":"workbench.panel.chatEditing","pinned":true,"visible":false,"order":101}]'
-workbench.auxiliarybar.placeholderPanels: "[{\"id\":\"terminal\",\"themeIcon\":{\
-  \"id\":\"terminal-view-icon\"},\"name\":\"Terminal\",\"isBuiltin\":true,\"vie\
-  ws\":[]},{\"id\":\"workbench.panel.chat\",\"themeIcon\":{\"id\":\"chat-sparkle\
-  \"},\"name\":\"Chat\",\"isBuiltin\":true,\"views\":[{\"when\":\"chatExtension\
-  Invalid || chatPanelParticipantRegistered || !chatSetupDisabled &&
-  !chatSetupHidden\"}]},{\"id\":\"workbench.viewContainer.agentSessions\",\"the\
-  meIcon\":{\"id\":\"chat-sessions-icon\"},\"name\":\"Agent
+workbench.auxiliarybar.placeholderPanels: "[{\"id\":\"terminal\",\"name\":\"Ter\
+  minal\",\"isBuiltin\":false},{\"id\":\"workbench.panel.chat\",\"themeIcon\":{\
+  \"id\":\"chat-sparkle\"},\"name\":\"Chat\",\"isBuiltin\":true,\"views\":[{\"w\
+  hen\":\"chatPanelParticipantRegistered && !chatExtensionInvalid &&
+  !chatSetupDisabled && !chatSetupHidden &&
+  !config.chat.disableAIFeatures\"}]},{\"id\":\"workbench.viewContainer.agentSe\
+  ssions\",\"themeIcon\":{\"id\":\"chat-sessions-icon\"},\"name\":\"Agent
   Sessions\",\"isBuiltin\":true,\"views\":[{\"when\":\"!chatSetupDisabled &&
   !chatSetupHidden && config.chat.agentSessionsViewLocation ==
   'single-view'\"}]},{\"id\":\"workbench.panel.chatEditing\",\"isBuiltin\":fals\
   e}]"
 workbench.auxiliaryBar.size: "300"
 workbench.chat.hideMovedChatWelcomeView: "true"
-workbench.editor.languageDetectionOpenedLanguages.global: '[["css",true],["javascript",true],["json",true],["yaml",true],["markdown",true],["plaintext",true],["jsonc",true]]'
+workbench.editor.languageDetectionOpenedLanguages.global: '[["css",true],["yaml",true],["javascript",true],["json",true],["plaintext",true],["jsonc",true],["cpp",true],["markdown",true]]'
 workbench.explorer.views.state.hidden: '[{"id":"outline","isHidden":false},{"id":"timeline","isHidden":false},{"id":"workbench.explorer.openEditorsView","isHidden":false},{"id":"workbench.explorer.emptyView","isHidden":false},{"id":"npm","isHidden":false},{"id":"workbench.explorer.fileView","isHidden":false},{"id":"hilightWordsExplore","isHidden":false},{"id":"outline-map-view","isHidden":false},{"id":"commitViewProvider","isHidden":false},{"id":"compareCommitViewProvider","isHidden":false},{"id":"foam-vscode.backlinks","isHidden":false},{"id":"foam-vscode.tags-explorer","isHidden":false},{"id":"foam-vscode.orphans","isHidden":false},{"id":"foam-vscode.placeholders","isHidden":false},{"id":"clangd.typeHierarchyView","isHidden":false},{"id":"clangd.memoryUsage","isHidden":false},{"id":"clangd.ast","isHidden":false},{"id":"foam-vscode.notes-explorer","isHidden":false},{"id":"rustDependencies","isHidden":false},{"id":"go.explorer","isHidden":false},{"id":"foam-vscode.connections","isHidden":false},{"id":"makefile.outline","isHidden":false},{"id":"dendron.sample","isHidden":false},{"id":"jupyterViewVariables","isHidden":false},{"id":"cl.eide.view.projects","isHidden":false},{"id":"cl.eide.view.operations","isHidden":false},{"id":"cell-tag","isHidden":false},{"id":"dendron.tip-of-the-day","isHidden":false},{"id":"dendron.backlinks","isHidden":false},{"id":"dendron.treeView","isHidden":false},{"id":"dendron.lookup-view","isHidden":false},{"id":"dendron.calendar-view","isHidden":false},{"id":"dendron.recent-workspaces","isHidden":false},{"id":"dendron.help-and-feedback","isHidden":false},{"id":"dendron.graph-panel","isHidden":false},{"id":"ccls.callHierarchy","isHidden":false},{"id":"ccls.inheritanceHierarchy","isHidden":false},{"id":"ccls.memberHierarchy","isHidden":false},{"id":"aws.codeWhisperer.referenceLog","isHidden":false},{"id":"aws.explorer","isHidden":false},{"id":"aws.developerTools","isHidden":false},{"id":"aws.amazonq.transformationHub","isHidden":false},{"id":"aws.amazonq.transformationProposedChangesTree","isHidden":false},{"id":"aws.amazonq","isHidden":false},{"id":"aws.codewhisperer","isHidden":false},{"id":"aws.cdk","isHidden":false},{"id":"aws.codecatalyst","isHidden":false},{"id":"aws.AmazonQChatView","isHidden":false},{"id":"aws.AmazonQNeverShowBadge","isHidden":false},{"id":"aws.amazonq.codewhisperer","isHidden":false},{"id":"aws.toolkit.AmazonCommonAuth","isHidden":false},{"id":"TongyiLingMa.Chat","isHidden":false},{"id":"latex-workshop-commands","isHidden":false},{"id":"latex-workshop-structure","isHidden":false},{"id":"latex-workshop-snippet-view","isHidden":false},{"id":"cSpellRegExpView","isHidden":false},{"id":"fittencode.chat","isHidden":false},{"id":"gitlens.views.graph","isHidden":false},{"id":"gitlens.views.graphDetails","isHidden":false},{"id":"gitlens.views.home","isHidden":false},{"id":"gitlens.views.drafts","isHidden":false},{"id":"gitlens.views.workspaces","isHidden":false},{"id":"gitlens.views.account","isHidden":false},{"id":"gitlens.views.commitDetails","isHidden":false},{"id":"gitlens.views.pullRequest","isHidden":false},{"id":"gitlens.views.lineHistory","isHidden":false},{"id":"gitlens.views.fileHistory","isHidden":false},{"id":"gitlens.views.timeline","isHidden":false},{"id":"gitlens.views.searchAndCompare","isHidden":false},{"id":"gitlens.views.patchDetails","isHidden":false},{"id":"codebot.view","isHidden":false},{"id":"projectsExplorerFavorites","isHidden":false},{"id":"projectsExplorerGit","isHidden":false},{"id":"projectsExplorerSVN","isHidden":false},{"id":"projectsExplorerAny","isHidden":false},{"id":"projectsExplorerMercurial","isHidden":false},{"id":"projectsExplorerVSCode","isHidden":false},{"id":"projectManagerHelpAndFeedback","isHidden":false},{"id":"leetCodeExplorer","isHidden":false},{"id":"foldersCompareAppService","isHidden":false},{"id":"foldersCompareAppServiceOnlyA","isHidden":false},{"id":"foldersCompareAppServiceOnlyB","isHidden":false},{"id":"foldersCompareAppServiceIdenticals","isHidden":false},{"id":"l13DiffFavorites","isHidden":false},{"id":"l13DiffHistory","isHidden":false},{"id":"typst-preview.content-preview","isHidden":false},{"id":"tinymist.side-symbol-view","isHidden":false},{"id":"typst-preview.outline","isHidden":false},{"id":"cpp.typeHierarchyView","isHidden":false},{"id":"cpp.memoryUsage","isHidden":false},{"id":"cpp.ast","isHidden":false},{"id":"asm-code-lens.calcview-explorer","isHidden":false},{"id":"tinymist.dev-kit","isHidden":false},{"id":"tinymist.preview.content-preview","isHidden":false},{"id":"tinymist.preview.outline","isHidden":false},{"id":"MarsCodeChatView","isHidden":false},{"id":"cpp.projects","isHidden":false},{"id":"QuestionExplorer","isHidden":false},{"id":"liveshare.session.explorer","isHidden":false},{"id":"liveshare.session","isHidden":false},{"id":"liveshare.help","isHidden":false},{"id":"liveshare.devtools","isHidden":false},{"id":"workspaceEnvironments","isHidden":false},{"id":"pythonEnvironments","isHidden":false},{"id":"gitlens.views.launchpad","isHidden":false},{"id":"dockerContainers","isHidden":false},{"id":"dockerImages","isHidden":false},{"id":"dockerRegistries","isHidden":false},{"id":"dockerNetworks","isHidden":false},{"id":"dockerVolumes","isHidden":false},{"id":"vscode-docker.views.dockerContexts","isHidden":false},{"id":"vscode-docker.views.help","isHidden":false},{"id":"dockerExplorerContainers","isHidden":false},{"id":"dockerExplorerImages","isHidden":false},{"id":"azureRegistries","isHidden":false},{"id":"DockerHubTreeView","isHidden":false},{"id":"suggestedDockerImages","isHidden":false},{"id":"activityBarInteractiveSmartlogDevelopment","isHidden":false},{"id":"coding-copilot.webviews.sidebar.feedback","isHidden":false},{"id":"coding-copilot.webviews.chat","isHidden":false},{"id":"coding-copilot.webviews.sidebar.settings","isHidden":false},{"id":"coding-copilot-manage-web","isHidden":false},{"id":"go.package.outline","isHidden":false},{"id":"activityBarInteractiveSmartlog","isHidden":false},{"id":"bookmarksExplorer","isHidden":false},{"id":"bookmarksHelpAndFeedback","isHidden":false},{"id":"marimo-explorer-running-applications","isHidden":false},{"id":"marimo-explorer-applications","isHidden":false},{"id":"outline-map-workspace","isHidden":false},{"id":"todo-tree-view","isHidden":false},{"id":"copilot-chat","isHidden":false},{"id":"TraeChatView","isHidden":false},{"id":"python-projects","isHidden":false},{"id":"env-managers","isHidden":false},{"id":"azureFocusView","isHidden":false},{"id":"azureResourceGroups","isHidden":false},{"id":"azureWorkspace","isHidden":false},{"id":"azureTenantsView","isHidden":false},{"id":"ms-azuretools.helpAndFeedback","isHidden":false},{"id":"azure-ai-foundry-resources","isHidden":false},{"id":"azure-ai-foundry-tools","isHidden":false},{"id":"azure-ai-foundry-help-and-feedback","isHidden":false},{"id":"azureActivityLog","isHidden":false},{"id":"aiToolkitMyModels","isHidden":false},{"id":"aiToolkitModels","isHidden":false},{"id":"aiToolkitTools","isHidden":false},{"id":"aiToolkitMCPWorkflow","isHidden":false},{"id":"aiToolkitHelpAndFeedback","isHidden":false},{"id":"azure-ai-foundry-resources-explorer","isHidden":false},{"id":"aiToolkitAgentGhcp","isHidden":false},{"id":"Lingma.Chat","isHidden":false},{"id":"marimo-explorer-recents","isHidden":false},{"id":"marimo-explorer-variables","isHidden":false},{"id":"marimo-explorer-datasources","isHidden":false},{"id":"marimo-explorer-packages","isHidden":false}]'
 workbench.panel.alignment: center
 workbench.panel.chat.hidden: '[{"id":"workbench.panel.chat.view.copilot","isHidden":false}]'
@@ -845,15 +216,15 @@ workbench.panel.lastNonMaximizedHeight: "300"
 workbench.panel.lastNonMaximizedWidth: "300"
 workbench.panel.markers.hidden: '[{"id":"workbench.panel.markers.view","isHidden":false}]'
 workbench.panel.output.hidden: '[{"id":"workbench.panel.output","isHidden":false}]'
-workbench.panel.pinnedPanels: '[{"id":"workbench.panel.markers","pinned":true,"visible":false,"order":0},{"id":"workbench.panel.output","pinned":true,"visible":false,"order":1},{"id":"workbench.panel.repl","pinned":true,"visible":false,"order":2},{"id":"workbench.panel.testResults","pinned":true,"visible":false,"order":3},{"id":"~remote.forwardedPortsContainer","pinned":true,"visible":false,"order":5},{"id":"workbench.view.extension.gitlensPanel","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.jupyter-variables","pinned":true,"visible":false,"order":7},{"id":"refactorPreview","pinned":true,"visible":false},{"id":"workbench.views.service.panel.2e6c91c1-a666-410a-8b9c-bdd1cb467738","pinned":true,"visible":false}]'
+workbench.panel.pinnedPanels: '[{"id":"workbench.panel.markers","pinned":true,"visible":false,"order":0},{"id":"workbench.panel.output","pinned":true,"visible":false,"order":1},{"id":"workbench.panel.repl","pinned":true,"visible":false,"order":2},{"id":"terminal","pinned":true,"visible":false,"order":3},{"id":"workbench.panel.testResults","pinned":true,"visible":false,"order":3},{"id":"~remote.forwardedPortsContainer","pinned":true,"visible":false,"order":5},{"id":"workbench.view.extension.gitlensPanel","pinned":true,"visible":false,"order":6},{"id":"workbench.view.extension.jupyter-variables","pinned":true,"visible":false,"order":7},{"id":"refactorPreview","pinned":true,"visible":false}]'
 workbench.panel.placeholderPanels: '[{"id":"workbench.panel.markers","themeIcon":{"id":"markers-view-icon"},"name":"Problems","isBuiltin":true,"views":[{}]},{"id":"workbench.panel.output","themeIcon":{"id":"output-view-icon"},"name":"Output","isBuiltin":true,"views":[{}]},{"id":"workbench.panel.repl","themeIcon":{"id":"debug-console-view-icon"},"name":"Debug
-  Console","isBuiltin":true,"views":[{"when":"debuggersAvailable"}]},{"id":"workbench.panel.testResults","themeIcon":{"id":"test-results-icon"},"name":"Test
-  Results","isBuiltin":true,"views":[{"when":"testing.hasAnyResults"}]},{"id":"~remote.forwardedPortsContainer","themeIcon":{"id":"ports-view-icon"},"name":"Ports","isBuiltin":true,"views":[]},{"id":"workbench.view.extension.gitlensPanel","themeIcon":{"id":"gitlens-graph"},"name":"GitLens","isBuiltin":false,"views":[{"when":"!gitlens:disabled
+  Console","isBuiltin":true,"views":[{"when":"debuggersAvailable"}]},{"id":"terminal","themeIcon":{"id":"terminal-view-icon"},"name":"Terminal","isBuiltin":true,"views":[{}]},{"id":"workbench.panel.testResults","themeIcon":{"id":"test-results-icon"},"name":"Test
+  Results","isBuiltin":true,"views":[{"when":"testing.hasAnyResults"}]},{"id":"~remote.forwardedPortsContainer","themeIcon":{"id":"ports-view-icon"},"name":"Ports","isBuiltin":true,"views":[{}]},{"id":"workbench.view.extension.gitlensPanel","themeIcon":{"id":"gitlens-graph"},"name":"GitLens","isBuiltin":false,"views":[{"when":"!gitlens:disabled
   && !gitlens:plus:disabled"},{"when":"!gitlens:disabled &&
   !gitlens:plus:disabled"}]},{"id":"workbench.view.extension.jupyter-variables","themeIcon":{"id":"notebook"},"name":"Jupyter","isBuiltin":false,"views":[{"when":"jupyter.hasNativeNotebookOrInteractiveWindowOpen"},{"when":"jupyter.hasNativeNotebookOrInteractiveWindowOpen
   &&
   jupyter:showTagsExplorer"}]},{"id":"refactorPreview","themeIcon":{"id":"refactor-preview-view-icon"},"name":"Refactor
-  Preview","isBuiltin":true,"views":[{"when":"refactorPreview.enabled"}]},{"id":"workbench.views.service.panel.2e6c91c1-a666-410a-8b9c-bdd1cb467738","themeIcon":{"id":"terminal-view-icon"},"name":"Terminal","isBuiltin":true,"views":[{}]}]'
+  Preview","isBuiltin":true,"views":[{"when":"refactorPreview.enabled"}]}]'
 workbench.panel.repl.hidden: '[{"id":"workbench.panel.repl.view","isHidden":false,"order":1},{"id":"terminal","isHidden":false,"order":0}]'
 workbench.panel.size: "266"
 workbench.scm.views.state.hidden: '[{"id":"workbench.scm","isHidden":false},{"id":"workbench.scm.repositories","isHidden":false},{"id":"gitlens.views.commitDetails","isHidden":false},{"id":"gitlens.views.contributors","isHidden":false},{"id":"gitlens.views.branches","isHidden":false},{"id":"gitlens.views.commits","isHidden":false},{"id":"gitlens.views.remotes","isHidden":false},{"id":"gitlens.views.repositories","isHidden":true},{"id":"gitlens.views.stashes","isHidden":false},{"id":"gitlens.views.tags","isHidden":false},{"id":"gitlens.views.worktrees","isHidden":false},{"id":"git-log--graph","isHidden":false},{"id":"workbench.scm.sync","isHidden":false},{"id":"workbench.scm.history","isHidden":false},{"id":"gitlens.views.scm.grouped","isHidden":false}]'
@@ -911,7 +282,7 @@ workbench.view.extensions.state.hidden: '[{"id":"workbench.views.extensions.inst
 workbench.view.remote.state.hidden: '[{"id":"targetsWsl","isHidden":false},{"id":"remoteTargets","isHidden":false},{"id":"~remote.helpPanel","isHidden":false},{"id":"targetsContainers","isHidden":false},{"id":"detailsContainers","isHidden":false},{"id":"devVolumes","isHidden":false}]'
 workbench.view.search.state.hidden: '[{"id":"workbench.view.search","isHidden":false}]'
 workbench.view.sync.state.hidden: '[{"id":"workbench.views.sync.conflicts","isHidden":false},{"id":"workbench.views.sync.remoteActivity","isHidden":false},{"id":"workbench.views.sync.machines","isHidden":false},{"id":"workbench.views.sync.localActivity","isHidden":true},{"id":"workbench.views.sync.troubleshoot","isHidden":true},{"id":"workbench.views.sync.externalActivity","isHidden":false}]'
-workbench.views.extensions.installed.size: "14"
+workbench.views.extensions.installed.size: "16"
 workbench.views.extensions.local.installed.size: "17"
 workbench.views.extensions.remote.installed.size: "12"
 workbench.views.service.panel.2e6c91c1-a666-410a-8b9c-bdd1cb467738.state.hidden: '[{"id":"terminal","isHidden":false}]'
