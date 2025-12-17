@@ -8,8 +8,6 @@ enabled:
     uuid: bfeaf631-bcff-4908-93ed-fda4ef9a0c5c
   - id: ms-vscode.remote-explorer
     uuid: 11858313-52cc-4e57-b3e4-d7b65281e34b
-  - id: sleistner.vscode-fileutils
-    uuid: d637104e-1fd7-4063-98fc-8afe46012c9b
   - id: vscodevim.vim
     uuid: d96e79c6-8b25-4be3-8545-0e0ecefcae03
   - id: zokugun.cron-tasks
