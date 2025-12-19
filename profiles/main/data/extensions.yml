@@ -1,7 +1,5 @@
 disabled: []
 enabled:
-  - id: eamodio.gitlens
-    uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
   - id: ms-vscode-remote.remote-ssh
     uuid: 607fd052-be03-4363-b657-2bd62b83d28a
   - id: ms-vscode-remote.remote-ssh-edit
