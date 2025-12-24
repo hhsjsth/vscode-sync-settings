@@ -4,6 +4,8 @@
 	// 避免被 minimap 挡住
 	"editor.wrappingStrategy": "advanced",
 	"editor.minimap.enabled": false,
+	// 防止奇奇怪怪的提示音
+	"editor.accessibilitySupport": "off",
 	"workbench.commandPalette.preserveInput": true,
 	/////////////////////////////////////////// Vim
 	"vim.vimrc.enable": true,
