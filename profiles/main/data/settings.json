@@ -61,4 +61,10 @@
 	// 	"ms-python.python"
 	// ],
 	"security.workspace.trust.enabled": false,
+	"syncSettings.ignoredExtensions": [
+		"ms-vscode-remote.remote-ssh",
+		"ms-vscode-remote.remote-ssh-edit",
+		"ms-vscode.remote-explorer"
+
+	],
 }

@@ -1,3 +1,33 @@
+builtin:
+  disabled:
+    - ms-vscode.js-debug
+    - ms-vscode.vscode-js-profile-table
+    - vscode.configuration-editing
+    - vscode.css-language-features
+    - vscode.debug-auto-launch
+    - vscode.debug-server-ready
+    - vscode.emmet
+    - vscode.extension-editing
+    - vscode.git
+    - vscode.git-base
+    - vscode.github
+    - vscode.grunt
+    - vscode.gulp
+    - vscode.html-language-features
+    - vscode.ipynb
+    - vscode.jake
+    - vscode.json-language-features
+    - vscode.markdown-language-features
+    - vscode.markdown-math
+    - vscode.merge-conflict
+    - vscode.mermaid-chat-features
+    - vscode.npm
+    - vscode.php-language-features
+    - vscode.references-view
+    - vscode.search-result
+    - vscode.terminal-suggest
+    - vscode.tunnel-forwarding
+    - vscode.typescript-language-features
 disabled: []
 enabled:
   - id: vscodevim.vim
