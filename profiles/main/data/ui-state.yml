@@ -19,68 +19,23 @@ workbench.activity.placeholderViewlets: "[{\"id\":\"workbench.view.explorer\",\
   te-explorer-view-icon\"},\"name\":\"Remote
   Explorer\",\"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.extensio\
   ns\",\"themeIcon\":{\"id\":\"extensions-view-icon\"},\"name\":\"Extensions\",\
-  \"isBuiltin\":true,\"views\":[{\"when\":\"defaultExtensionViews &&
-  extensionsGalleryStatus == 'accessDenied' || defaultExtensionViews &&
-  extensionsGalleryStatus == 'requiresSignIn' || searchMarketplaceExtensions &&
-  extensionsGalleryStatus == 'accessDenied' || searchMarketplaceExtensions &&
-  extensionsGalleryStatus ==
-  'requiresSignIn'\"},{\"when\":\"defaultExtensionViews\"},{\"when\":\"searchEx\
-  tensionUpdates ||
-  searchOutdatedExtensions\"},{\"when\":\"recommendedExtensions &&
-  workbenchState != 'empty'\"},{\"when\":\"defaultExtensionViews && hasGallery
-  && !hasInstalledExtensions\"},{\"when\":\"searchExtensionUpdates ||
-  searchRecentlyUpdatedExtensions\"},{\"when\":\"recommendedExtensions\"},{\"wh\
-  en\":\"defaultExtensionViews && hasGallery &&
-  !config.extensions.showRecommendationsOnlyOnDemand &&
-  !sortByUpdateDate\"},{\"when\":\"defaultExtensionViews &&
-  hasInstalledExtensions\"},{\"when\":\"defaultExtensionViews &&
-  hasInstalledMcpServers\"},{\"when\":\"config.chat.mcp.gallery.enabled &&
-  defaultExtensionViews && !chatSetupHidden && !config.chat.disableAIFeatures &&
-  !hasInstalledMcpServers && mcpServersGalleryStatus == 'available' ||
-  config.chat.mcp.gallery.serviceUrl && defaultExtensionViews &&
-  !chatSetupHidden && !config.chat.disableAIFeatures && !hasInstalledMcpServers
-  && mcpServersGalleryStatus == 'available' || defaultExtensionViews &&
-  !chatSetupHidden && !config.chat.disableAIFeatures && !hasInstalledMcpServers
-  && mcpServersGalleryStatus == 'available' && productQualityType !=
-  'stable'\"},{\"when\":\"defaultExtensionViews && !chatSetupHidden &&
-  !config.chat.disableAIFeatures && !config.chat.mcp.gallery.enabled &&
-  !config.chat.mcp.gallery.serviceUrl && !hasInstalledMcpServers &&
-  mcpServersGalleryStatus == 'available' && productQualityType ==
-  'stable'\"},{\"when\":\"defaultExtensionViews &&
-  hasInstalledExtensions\"},{\"when\":\"hasGallery &&
-  searchMarketplaceExtensions\"},{\"when\":\"installedExtensions ||
-  searchInstalledExtensions\"},{\"when\":\"searchEnabledExtensions\"},{\"when\":\
-  \"searchDisabledExtensions\"},{\"when\":\"searchBuiltInExtensions\"},{\"when\
-  \":\"searchWorkspaceUnsupportedExtensions\"},{\"when\":\"builtInExtensions\"}\
-  ,{\"when\":\"builtInExtensions\"},{\"when\":\"builtInExtensions\"},{\"when\":\
-  \"searchUnsupportedWorkspaceExtensions\"},{\"when\":\"searchUnsupportedWorksp\
-  aceExtensions\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
-  virtualWorkspace\"},{\"when\":\"searchUnsupportedWorkspaceExtensions &&
-  virtualWorkspace\"},{\"when\":\"searchDeprecatedExtensions\"},{\"when\":\"con\
-  fig.chat.mcp.gallery.enabled && searchMcpServers && mcpServersGalleryStatus ==
-  'available' || config.chat.mcp.gallery.serviceUrl && searchMcpServers &&
-  mcpServersGalleryStatus == 'available' || searchMcpServers &&
-  mcpServersGalleryStatus == 'available' && productQualityType !=
-  'stable'\"},{\"when\":\"searchMcpServers && !config.chat.mcp.gallery.enabled
-  && !config.chat.mcp.gallery.serviceUrl && mcpServersGalleryStatus ==
-  'available' && productQualityType ==
-  'stable'\"}]},{\"id\":\"workbench.view.chat.sessions\",\"themeIcon\":{\"id\":\
-  \"chat-sessions-icon\",\"description\":\"Icon for Agent Sessions
+  \"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.chat.sessions\",\"t\
+  hemeIcon\":{\"id\":\"chat-sessions-icon\",\"description\":\"Icon for Agent
+  Sessions
   View\",\"defaults\":{\"id\":\"comment-discussion-sparkle\"}},\"name\":\"Agent
-  Sessions\",\"isBuiltin\":true,\"views\":[{\"when\":\"!chatSetupDisabled &&
-  !chatSetupHidden && config.chat.agentSessionsViewLocation ==
-  'view'\"}]},{\"id\":\"workbench.view.extension.test\",\"themeIcon\":{\"id\":\
-  \"test-view-icon\"},\"name\":\"Testing\",\"isBuiltin\":true,\"views\":[{\"when\
-  \":\"testing.providerCount >
+  Sessions\",\"isBuiltin\":true,\"views\":[]},{\"id\":\"workbench.view.extensio\
+  n.test\",\"themeIcon\":{\"id\":\"test-view-icon\"},\"name\":\"Testing\",\"isB\
+  uiltin\":true,\"views\":[{\"when\":\"testing.providerCount >
   0\"},{\"when\":\"testing.isTestCoverageOpen\"}]},{\"id\":\"workbench.view.ext\
   ension.references-view\",\"themeIcon\":{\"id\":\"references\"},\"name\":\"Ref\
-  erences\",\"isBuiltin\":false,\"views\":[]},{\"id\":\"workbench.view.extensio\
-  n.python\",\"name\":\"Python\",\"isBuiltin\":false},{\"id\":\"workbench.view.\
-  extension.github-copilot-completions-debugger-panel\",\"name\":\"Debugger\",\
-  \"isBuiltin\":false},{\"id\":\"workbench.view.extension.github-pull-requests\
-  \",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.trae\",\"isBuiltin\
-  \":false},{\"id\":\"workbench.view.extension.TongyiLingma\",\"isBuiltin\":fal\
-  se},{\"id\":\"workbench.view.extension.copilot-chat\",\"name\":\"Chat
+  erences\",\"isBuiltin\":false,\"views\":[{\"when\":\"reference-list.isActive\
+  \"}]},{\"id\":\"workbench.view.extension.python\",\"name\":\"Python\",\"isBui\
+  ltin\":false},{\"id\":\"workbench.view.extension.github-copilot-completions-d\
+  ebugger-panel\",\"name\":\"Debugger\",\"isBuiltin\":false},{\"id\":\"workbenc\
+  h.view.extension.github-pull-requests\",\"isBuiltin\":false},{\"id\":\"workbe\
+  nch.view.extension.trae\",\"isBuiltin\":false},{\"id\":\"workbench.view.exten\
+  sion.TongyiLingma\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.c\
+  opilot-chat\",\"name\":\"Chat
   Debug\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.jupyter\",\"n\
   ame\":\"Jupyter\",\"isBuiltin\":false},{\"id\":\"workbench.view.extension.con\
   text-inspector\",\"name\":\"Language Context
