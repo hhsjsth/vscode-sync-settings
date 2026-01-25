@@ -55,11 +55,11 @@
 		"**/.cache/clangd": true
 	},
 	"update.mode": "manual",
-	// "remote.SSH.defaultExtensions": [
-	// 	"charliermarsh.ruff",
-	// 	"ms-toolsai.jupyter",
-	// 	"ms-python.python"
-	// ],
+	"remote.SSH.defaultExtensions": [
+		"charliermarsh.ruff",
+		"ms-toolsai.jupyter",
+		"ms-python.python"
+	],
 	"security.workspace.trust.enabled": false,
 	"syncSettings.ignoredExtensions": [
 		"ms-vscode-remote.remote-ssh",
