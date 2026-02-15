@@ -70,6 +70,6 @@
 
 	],
 	"syncSettings.ignoredSettings": [
-		"ui-state.yml"
+		"uiState"
 	],
 }
