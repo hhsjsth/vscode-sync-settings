@@ -69,4 +69,7 @@
 		"ms-vscode.remote-explorer"
 
 	],
+	"syncSettings.ignoredSettings": [
+		"ui-state.yml"
+	],
 }
