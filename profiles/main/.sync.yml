@@ -2,5 +2,8 @@ ignoredExtensions:
   - ms-vscode-remote.remote-ssh
   - ms-vscode-remote.remote-ssh-edit
   - ms-vscode.remote-explorer
-ignoredSettings:
-  - uiState
+resources:
+  - extensions
+  - keybindings
+  - settings
+  - snippets

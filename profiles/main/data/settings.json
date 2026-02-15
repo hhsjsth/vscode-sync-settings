@@ -69,7 +69,11 @@
 		"ms-vscode.remote-explorer"
 
 	],
-	"syncSettings.ignoredSettings": [
-		"uiState"
-	],
+	"syncSettings.resources": [
+		"extensions",
+		"keybindings",
+		"settings",
+		"snippets",
+		// "uiState"
+	]
 }
