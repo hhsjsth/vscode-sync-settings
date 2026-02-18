@@ -33,6 +33,14 @@
 		"<C-r>": false,
 		"<C-p>": false
 	},
+	/////////////////////////////////////////// Terminal
+	"terminal.integrated.defaultProfile.windows": "pwsh",
+	"terminal.external.windowsExec": "pwsh",
+	"terminal.integrated.profiles.windows": {
+		"pwsh": {
+			"path": "D:\\scoop\\apps\\powershell\\current\\pwsh.exe"
+		},
+	},
 	/////////////////////////////////////////// Format
 	"[python]": {
 		"editor.defaultFormatter": "charliermarsh.ruff",
