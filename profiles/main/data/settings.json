@@ -83,5 +83,6 @@
 		"settings",
 		"snippets",
 		// "uiState"
-	]
+	],
+	"http.proxy": "socks5://gtr-proxy-server:7890",
 }
