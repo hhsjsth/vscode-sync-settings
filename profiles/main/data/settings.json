@@ -10,7 +10,7 @@
 	// 防止奇奇怪怪的提示音
 	"editor.accessibilitySupport": "off",
 	"workbench.commandPalette.preserveInput": true,
-	/////////////////////////////////////////// Vim
+	//////////////////////////////////////////////////////////////// Vim
 	"vim.vimrc.enable": true,
 	"vim.vimrc.path": "D:\\Data\\Configuration\\vim\\.vscode.vimrc",
 	// 这个选项有 bug, 会导致 vim 光标在跳到某个位置之后再按左右就会回到以前的地方再左右移动, 而不是再跳转之后的位置进行左右移动
@@ -33,7 +33,7 @@
 		"<C-r>": false,
 		"<C-p>": false
 	},
-	/////////////////////////////////////////// Terminal
+	//////////////////////////////////////////////////////////////// Terminal
 	"terminal.integrated.defaultProfile.windows": "pwsh",
 	"terminal.external.windowsExec": "pwsh",
 	"terminal.integrated.profiles.windows": {
@@ -41,17 +41,17 @@
 			"path": "D:\\scoop\\apps\\powershell\\current\\pwsh.exe"
 		},
 	},
-	/////////////////////////////////////////// Format
+	//////////////////////////////////////////////////////////////// Format
 	"[python]": {
 		"editor.defaultFormatter": "charliermarsh.ruff",
 	},
-	/////////////////////////////////////////// Files
+	//////////////////////////////////////////////////////////////// Files
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
-	/////////////////////////////////////////// Python
+	//////////////////////////////////////////////////////////////// Python
 	"notebook.defaultFormatter": "charliermarsh.ruff",
-	/////////////////////////////////////////// Other
+	//////////////////////////////////////////////////////////////// Other
 	"git.confirmSync": false,
 	"extensions.ignoreRecommendations": true,
 	// 当搜索词为小写时，则不区分大小写进行搜索；否则区分大小写
