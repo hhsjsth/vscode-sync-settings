@@ -1,6 +1,7 @@
+builtin:
+  disabled:
+    - GitHub.copilot-chat
 disabled: []
 enabled:
-  - id: vscodevim.vim
-    uuid: d96e79c6-8b25-4be3-8545-0e0ecefcae03
   - id: zokugun.cron-tasks
     uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb

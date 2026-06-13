@@ -1,18 +1,20 @@
 {
 	"window.autoDetectColorScheme": true,
-	"workbench.preferredLightColorTheme": "Default Light Modern",
-	"workbench.preferredDarkColorTheme": "Default Dark Modern",
+	"workbench.preferredLightColorTheme": "Light 2026",
+	"workbench.preferredDarkColorTheme": "Dark 2026",
 	"editor.fontFamily": "RecMonoSmCasual Nerd Font Propo, FiraMono Nerd Font Propo, JetBrainsMono NFP, Maple Mono NF CN, MonaspiceNe Nerd Font Propo, Cascadia Code, CodeNewRoman Nerd Font Propo, Noto Sans Mono CJK SC, Agave Nerd Font Propo, UbuntuMono Nerd Font Propo, CommitMono Nerd Font Propo, Monaco Nerd Font Mono, Iosevka Custom, Inconsolata Nerd Font, Zed Plex Mono, ZedMono NFP, Input, Intel One Mono, WPSLingXiuHei, PingFang SC, LXGW WenKai Screen, Source Han Mono SC, M PLUS Code Latin, Comic Mono",
 	"editor.wordWrap": "on",
+	// "editor.renderWhitespace": "all",
 	// 避免被 minimap 挡住
 	"editor.wrappingStrategy": "advanced",
-	"editor.minimap.enabled": false,
+	// "editor.minimap.enabled": false,
 	// 防止奇奇怪怪的提示音
 	"editor.accessibilitySupport": "off",
 	"workbench.commandPalette.preserveInput": true,
+	"editor.formatOnSave": true,
 	//////////////////////////////////////////////////////////////// Vim
 	"vim.vimrc.enable": true,
-	"vim.vimrc.path": "D:\\Data\\Configuration\\vim\\.vscode.vimrc",
+	"vim.vimrc.path": "~/.vscode.vimrc",
 	// 这个选项有 bug, 会导致 vim 光标在跳到某个位置之后再按左右就会回到以前的地方再左右移动, 而不是再跳转之后的位置进行左右移动
 	"vim.useSystemClipboard": true,
 	"vim.easymotion": true,
@@ -41,41 +43,29 @@
 			"path": "D:\\scoop\\apps\\powershell\\current\\pwsh.exe"
 		},
 	},
-	//////////////////////////////////////////////////////////////// Format
-	"[python]": {
-		"editor.defaultFormatter": "charliermarsh.ruff",
-	},
 	//////////////////////////////////////////////////////////////// Files
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	//////////////////////////////////////////////////////////////// Python
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.formatOnSave": true
+	},
+	"notebook.formatOnSave.enabled": true,
 	"notebook.defaultFormatter": "charliermarsh.ruff",
-	//////////////////////////////////////////////////////////////// Other
-	"git.confirmSync": false,
-	"extensions.ignoreRecommendations": true,
-	// 当搜索词为小写时，则不区分大小写进行搜索；否则区分大小写
-	"search.smartCase": true,
-	"remote.SSH.remotePlatform": {
-		"gtr-arch": "linux"
-	},
-	"files.exclude": {
-		"**/.git": true,
-		"**/.ccls-cache": true,
-		"**/.cache/clangd": true
-	},
-	"update.mode": "manual",
-	"remote.SSH.defaultExtensions": [
-		"charliermarsh.ruff",
-		"ms-toolsai.jupyter",
-		"ms-python.python"
+	"jupyter.kernels.excludePythonEnvironments": [
+		"D:\\scoop\\shims\\python3.exe",
+		"D:\\scoop\\shims\\python313.exe",
+		"D:\\scoop\\shims\\python*",
+		"/usr/bin/python3",
+		"~/.local/bin/python3.14"
 	],
-	"security.workspace.trust.enabled": false,
+	//////////////////////////////////////////////////////////////// zokugun.sync-settings
 	"syncSettings.ignoredExtensions": [
 		"ms-vscode-remote.remote-ssh",
 		"ms-vscode-remote.remote-ssh-edit",
 		"ms-vscode.remote-explorer"
-
 	],
 	"syncSettings.resources": [
 		"extensions",
@@ -84,5 +74,34 @@
 		"snippets",
 		// "uiState"
 	],
-	"http.proxy": "socks5://gtr-proxy-server:7890",
+	//////////////////////////////////////////////////////////////// Other
+	"extensions.ignoreRecommendations": true,
+	// 当搜索词为小写时，则不区分大小写进行搜索；否则区分大小写
+	"search.smartCase": true,
+	"remote.SSH.remotePlatform": {
+		"gtr-arch": "linux",
+		"gtr-debian": "linux"
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.ccls-cache": true,
+		"**/.cache/clangd": true
+	},
+	"update.mode": "manual",
+	// "remote.SSH.defaultExtensions": [
+	// 	"charliermarsh.ruff",
+	// 	"ms-toolsai.jupyter",
+	// 	"ms-python.python"
+	// ],
+	"security.workspace.trust.enabled": false,
+	"http.proxy": "http://gtr-proxy-server:7890",
+	"remote.SSH.httpProxy": "http://gtr-proxy-server:7890",
+	"remote.SSH.httpsProxy": "http://gtr-proxy-server:7890",
+	// 唤起浏览器而不是一个微软原生窗口进行账户登录, 且实测发现后续不容易失效
+	"microsoft-authentication.implementation": "msal-no-broker",
+	"settingsSync.ignoredSettings": [
+		"-jupyter.kernels.excludePythonEnvironments",
+		"-python.defaultInterpreterPath"
+	],
+	"chat.disableAIFeatures": true
 }
