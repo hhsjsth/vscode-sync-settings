@@ -1,6 +1,3 @@
-builtin:
-  disabled:
-    - GitHub.copilot-chat
 disabled: []
 enabled:
   - id: zokugun.cron-tasks

@@ -1,0 +1,6 @@
+[
+    {
+        "key": "ctrl+alt+oem_comma",
+        "command": "workbench.action.openSettingsJson"
+    }
+]
